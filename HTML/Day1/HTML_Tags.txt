@@ -1,0 +1,24 @@
+Closing Tag:
+
+	-A closing tag is used to end an HTML element.
+	-It tells the browser where the content of the element stops.
+
+Example:
+	<p></p>
+	<h1></h1>
+
+Self-Closing Tag:
+
+A self-closing tag completes itself and does not need a separate closing tag.
+
+Example:
+	<br />
+	<img src="photo.jpg" />
+
+Empty Tag:
+	-An empty tag is a tag that has no content inside it.
+	-Most empty tags are also self-closing tags.
+
+Example:
+	<br>
+	<hr>
