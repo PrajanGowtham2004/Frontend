@@ -1,0 +1,132 @@
+<html>
+  <head>
+    <title>FORM & TABLE</title>
+    
+  </head>
+  <body>
+    <h1>FORM</h1>
+    <section>
+      <div>
+        <form>
+          <label>Product name</label>
+          <input type="text" placeholder="name" required>
+          
+          <br><br
+          
+
+          <label>Category</label>
+          <select required>
+              <option value="" disabled selected>Choose one..</option>
+              <option value="Vegetable">Vegetable</option>
+              <option value="Fruit">Fruit</option>
+              <option value="Spices">Spices</option>
+          </select>
+          
+          <br><br>
+          
+          <label>Price</label>
+          <input type="number" placeholder="In Rupees" min="10" max="1000" required>
+          
+          <br><br>
+          
+          <label>Quantity</label>
+          <input type="number" placeholder="Quantity" min="2" max="10" required>
+          
+          <br><br>
+          
+          <img src="../assets/images/super_market/shupermarket_banner.jpeg" alt="Banner" width="500"/>
+          
+          <br><br>
+          
+          <label>City</label>
+          <input type="text" placeholder="city name" required>
+          
+          <br><br>
+          
+          <label>Shipping id</label>
+          <input type="number" placeholder="ID" maxlength="10" minlength="10" required>
+          
+          <br><br>
+          
+          <label> Weight</label>
+          <input type="number" placeholder="In KG" min="2" max="10" required>
+          
+          <br><br>
+          
+          <label>Price</label>
+          <input type="text" placeholder="In Rupees" required>
+          
+          <br><br>
+          
+          <label>License</label>
+
+                <input type="radio" name="one" value="yes"> Yes
+                <input type="radio" name="one" value="no"> No
+
+                <br><br>
+                
+          <label>Approved list<label/>
+            <input type="checkbox"> FSSI
+            <input type="checkbox"> GST
+            <input type="checkbox"> FOOT License
+          
+        </form>
+      </div>
+      
+    </section>
+    <hr>
+    
+    <section>
+      <div>
+        <h1>Product table</h1>
+        <table border="2">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Category</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>City</th>
+              <th>Weight</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Carrot</td>
+              <td>Vegetable</td>
+              <td>50</td>
+              <td>5</td>
+              <td>Chennai</td>
+              <td>2kg</td>
+            </tr>
+            <tr>
+              <td>Apple</td>
+              <td>Fruit</td>
+              <td>100</td>
+              <td>6</td>
+              <td>Kashmir</td>
+              <td>5kg</td>
+            </tr>
+            <tr>
+              <td>Orange</td>
+              <td>Fruit</td>
+              <td>70</td>
+              <td>10</td>
+              <td>Himalayas</td>
+              <td>9kg</td>
+            </tr>
+            <tr>
+              <td>Cardamom</td>
+              <td>Spices</td>
+              <td>2000</td>
+              <td>500</td>
+              <td>Kerala</td>
+              <td>50kg</td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    </section>
+  </body>
+</html>
