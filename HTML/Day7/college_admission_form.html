@@ -1,0 +1,292 @@
+<html>
+
+<head>
+    <title>College Admission Form</title>
+</head>
+
+<body>
+
+    <section>
+
+        <div>
+
+            <center>
+
+                <h1>College Admission Form</h1>
+
+                <form>
+
+                    <!-- Student Details -->
+
+                    <fieldset>
+
+                        <legend>Student Information</legend>
+
+                        <label>Full Name:</label>
+                        <input type="text"
+                            placeholder="Enter your full name"
+                            required>
+
+                        <br><br>
+
+                        <label>Email:</label>
+                        <input type="email"
+                            placeholder="Enter your email"
+                            required>
+
+                        <br><br>
+
+                        <label>Password:</label>
+                        <input type="password"
+                            placeholder="Create password"
+                            required>
+
+                        <br><br>
+
+                        <label>Phone Number:</label>
+                        <input type="tel"
+                            placeholder="Enter phone number"
+                            required>
+
+                        <br><br>
+
+                        <label>Date of Birth:</label>
+                        <input type="date">
+
+                        <br><br>
+
+                        <label>Gender:</label>
+
+                        <input type="radio" name="gender">
+                        <label>Male</label>
+
+                        <input type="radio" name="gender">
+                        <label>Female</label>
+
+                        <input type="radio" name="gender">
+                        <label>Other</label>
+
+                        <br><br>
+
+                        <label>Blood Group:</label>
+
+                        <select>
+
+                            <option value="" disabled selected>
+                                Choose Blood Group
+                            </option>
+
+                            <option>A+</option>
+                            <option>A-</option>
+                            <option>B+</option>
+                            <option>O+</option>
+                            <option>AB+</option>
+
+                        </select>
+
+                    </fieldset>
+
+                    <br>
+
+
+                    <fieldset>
+
+                        <legend>School Details</legend>
+
+                        <label>School Name:</label>
+                        <input type="text"
+                            placeholder="Enter school name">
+
+                        <br><br>
+
+                        <label>Board of Education:</label>
+
+                        <select>
+
+                            <option value="" disabled selected>
+                                Choose Board
+                            </option>
+
+                            <option>State Board</option>
+                            <option>CBSE</option>
+                            <option>ICSE</option>
+
+                        </select>
+
+                        <br><br>
+
+                        <label>12th Percentage:</label>
+                        <input type="number"
+                            placeholder="Enter percentage">
+
+                        <br><br>
+
+                        <label>Year of Passing:</label>
+                        <input type="number"
+                            placeholder="Enter passing year">
+
+                    </fieldset>
+
+                    <br>
+
+
+
+                    <fieldset>
+
+                        <legend>Course Details</legend>
+
+                        <label>Select Department:</label>
+
+                        <select required>
+
+                            <option value="" disabled selected>
+                                Choose Department
+                            </option>
+
+                            <optgroup label="Engineering Courses">
+
+                                <option>CSE</option>
+                                <option>ECE</option>
+                                <option>EEE</option>
+                                <option>Mechanical</option>
+                                <option>Civil</option>
+
+                            </optgroup>
+
+                            <optgroup label="Arts & Science Courses">
+
+                                <option>BCA</option>
+                                <option>B.Com</option>
+                                <option>B.Sc Mathematics</option>
+                                <option>B.Sc Physics</option>
+
+                            </optgroup>
+
+                        </select>
+
+                        <br><br>
+
+                        <label>Preferred Shift:</label>
+
+                        <select>
+
+                            <option>Morning</option>
+                            <option>Evening</option>
+
+                        </select>
+
+                    </fieldset>
+
+                    <br>
+
+
+                    <fieldset>
+
+                        <legend>Hostel Details</legend>
+
+                        <label>Need Hostel:</label>
+
+                        <input type="radio" name="hostel">
+                        <label>Yes</label>
+
+                        <input type="radio" name="hostel">
+                        <label>No</label>
+
+                        <br><br>
+
+                        <label>Room Type:</label>
+
+                        <select>
+
+                            <option value="" disabled selected>
+                                Choose Room Type
+                            </option>
+
+                            <option>Single Sharing</option>
+                            <option>Double Sharing</option>
+                            <option>Triple Sharing</option>
+
+                        </select>
+
+                        <br><br>
+
+                        <label>Food Preference:</label>
+
+                        <input type="checkbox">
+                        <label>Veg</label>
+
+                        <input type="checkbox">
+                        <label>Non-Veg</label>
+
+                    </fieldset>
+
+                    <br>
+
+
+
+                    <fieldset>
+
+                        <legend>Address Details</legend>
+
+                        <label>Address:</label>
+
+                        <br>
+
+                        <textarea rows="5" cols="40"
+                            placeholder="Enter your address"></textarea>
+
+                        <br><br>
+
+                        <label>City:</label>
+                        <input type="text"
+                            placeholder="Enter city">
+
+                        <br><br>
+
+                        <label>State:</label>
+                        <input type="text"
+                            placeholder="Enter state">
+
+                        <br><br>
+
+                        <label>Pincode:</label>
+                        <input type="number"
+                            placeholder="Enter pincode">
+
+                    </fieldset>
+
+                    <br>
+
+
+
+                    <fieldset>
+
+                        <legend>Document Upload</legend>
+
+                        <label>Upload Photo:</label>
+                        <input type="file">
+
+                        <br><br>
+
+                        <label>Upload Marksheet:</label>
+                        <input type="file">
+
+                    </fieldset>
+
+                    <br>
+
+                    <input type="submit" value="Apply Now">
+
+                    <input type="reset" value="Clear">
+
+                </form>
+
+            </center>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
