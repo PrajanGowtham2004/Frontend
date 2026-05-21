@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.outer-box{
+    width: 400px;
+    height: 400px;
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    margin: 50px auto;
+    padding-top: 70px;
+}
+
+.middle-box{
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding-top: 60px;
+}
+
+.inner-box{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    color: black;
+    margin: auto;
+    text-align: center;
+    padding-top: 45px;
+}
