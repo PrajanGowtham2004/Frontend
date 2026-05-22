@@ -1,0 +1,163 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color:lightblue;
+    padding:20px;
+}
+
+
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color:black;
+    padding:15px 25px;
+    margin-bottom:40px;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.menu{
+    display:flex;
+    gap:20px;
+    list-style:none;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+}
+
+
+
+section{
+    margin-bottom:50px;
+}
+
+h2{
+    margin-bottom:20px;
+    color:black;
+}
+
+
+
+.flex-container{
+    display:flex;
+    gap:15px;
+}
+
+.box{
+    background-color:royalblue;
+    color:white;
+    padding:40px;
+    flex:1;
+    text-align:center;
+    border-radius:10px;
+}
+
+
+
+.card-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background-color:white;
+    width:250px;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+
+
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.gallery-box{
+    width:150px;
+    height:150px;
+    background-color:tomato;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+    border-radius:10px;
+}
+
+
+
+.justify-container{
+    display:flex;
+    background-color:white;
+    padding:20px;
+    border-radius:10px;
+    height:120px;
+    align-items:center;
+    border:2px solid #ccc;
+}
+
+.jc-box{
+    width:80px;
+    height:80px;
+    background-color:yellow;
+    color:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:25px;
+    border-radius:10px;
+}
+
+
+
+.center{
+    justify-content:center;
+}
+
+.space-between{
+    justify-content:space-between;
+}
+
+.space-around{
+    justify-content:space-around;
+}
+
+.space-evenly{
+    justify-content:space-evenly;
+}
+
+.flex-start{
+    justify-content:flex-start;
+    gap:15px;
+}
+
+.flex-end{
+    justify-content:flex-end;
+    gap:15px;
+}
