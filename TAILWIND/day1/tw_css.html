@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Tasks</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Task 3: Navbar -->
+    <nav class="bg-white shadow-md p-4 flex justify-between items-center">
+
+    <h1 class="text-2xl font-bold rounded-full bg-blue-500 text-white px-4 py-2">
+        LOGO
+    </h1>
+
+    <div class="flex items-center gap-6">
+        <ul class="flex gap-6">
+            <li><a href="#" class="hover:text-blue-500">Home</a></li>
+            <li><a href="#" class="hover:text-blue-500">About</a></li>
+            <li><a href="#" class="hover:text-blue-500">Contact</a></li>
+        </ul>
+
+        <button class="bg-blue-500 text-white px-4 py-2 rounded">
+            Login
+        </button>
+    </div>
+
+</nav>
+
+    <!-- Task 1: Card -->
+    <section class="p-10">
+        <h2 class="text-3xl font-bold mb-5">Task 1 - Card</h2>
+
+        <div class="bg-white shadow-lg rounded-lg p-5 max-w-sm">
+            <img
+                src="../images/tw_css/card.jpeg"
+                alt="Nature"
+                class="rounded-lg mb-4"
+            >
+
+            <h3 class="text-xl font-bold mb-2">
+                Beautiful Nature
+            </h3>
+
+            <p class="text-gray-600 mb-4">
+                Enjoy the beauty of nature with amazing landscapes.
+            </p>
+
+            <button class="bg-blue-500 text-white px-4 py-2 rounded">
+                Read More
+            </button>
+        </div>
+    </section>
+
+    <!-- Task 2: Responsive Grid -->
+    <section class="p-10">
+        <h2 class="text-3xl font-bold mb-5">
+            Task 2 - Responsive Grid
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+            <div class="bg-blue-200 p-10 text-center rounded">Box 1</div>
+            <div class="bg-blue-200 p-10 text-center rounded">Box 2</div>
+            <div class="bg-blue-200 p-10 text-center rounded">Box 3</div>
+            <div class="bg-blue-200 p-10 text-center rounded">Box 4</div>
+            <div class="bg-blue-200 p-10 text-center rounded">Box 5</div>
+            <div class="bg-blue-200 p-10 text-center rounded">Box 6</div>
+
+        </div>
+    </section>
+
+    <!-- Task 4: Profile Card -->
+    <section class="p-10">
+        <h2 class="text-3xl font-bold mb-5">
+            Task 4 - Profile Card
+        </h2>
+
+        <div class="bg-white shadow-lg rounded-lg p-6 w-72 flex flex-col items-center">
+
+            <img
+                src="../images/tw_css/card.jpeg"
+                alt="Profile"
+                class="w-24 h-24 rounded-full mb-4"
+            >
+
+            <h3 class="text-xl font-bold">
+                Prajan
+            </h3>
+
+            <p class="text-gray-500 mb-4">
+                Web Developer
+            </p>
+
+            <button class="bg-green-500 text-white px-4 py-2 rounded">
+                Follow
+            </button>
+
+        </div>
+    </section>
+
+    <!-- Task 5: Image Gallery -->
+    <section class="p-10">
+        <h2 class="text-3xl font-bold mb-5">
+            Task 5 - Image Gallery
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+            <div class="overflow-hidden rounded-lg">
+                <img src="../images/tw_css/html5.jpeg"
+                    class="transition hover:scale-110 w-full">
+            </div>
+
+            <div class="overflow-hidden rounded-lg">
+                <img src="../images/tw_css/css3.jpeg"
+                    class="transition hover:scale-110 w-full">
+            </div>
+
+            <div class="overflow-hidden rounded-lg">
+                <img src="../images/tw_css/bootstrap.jpeg"
+                    class="transition hover:scale-110 w-full">
+            </div>
+
+            <div class="overflow-hidden rounded-lg">
+                <img src="../images/tw_css/tailwind_css.jpeg"
+                    class="transition hover:scale-110 w-full">
+            </div>
+
+            <div class="overflow-hidden rounded-lg">
+                <img src="../images/tw_css/js.jpeg"
+                    class="transition hover:scale-110 w-full">
+            </div>
+
+            <div class="overflow-hidden rounded-lg">
+                <img src="../images/tw_css/react.jpeg"
+                    class="transition hover:scale-110 w-full h-full">
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
