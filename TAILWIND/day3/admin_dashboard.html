@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Dashboard Layout -->
+    <div class="grid grid-cols-1 md:grid-cols-4 min-h-screen">
+
+        <!-- Sidebar -->
+        <aside class="bg-gray-900 text-white p-6">
+
+            <h1 class="text-2xl font-bold mb-8">
+                Admin Panel
+            </h1>
+
+            <ul class="space-y-4">
+
+                <li class="flex items-center gap-3 hover:text-blue-400 cursor-pointer">
+                    <i class="fas fa-chart-line"></i>
+                    Dashboard
+                </li>
+
+                <li class="flex items-center gap-3 hover:text-blue-400 cursor-pointer">
+                    <i class="fas fa-users"></i>
+                    Users
+                </li>
+
+                <li class="flex items-center gap-3 hover:text-blue-400 cursor-pointer">
+                    <i class="fas fa-book"></i>
+                    Courses
+                </li>
+
+                <li class="flex items-center gap-3 hover:text-blue-400 cursor-pointer">
+                    <i class="fas fa-file-alt"></i>
+                    Reports
+                </li>
+
+                <li class="flex items-center gap-3 hover:text-blue-400 cursor-pointer">
+                    <i class="fas fa-cog"></i>
+                    Settings
+                </li>
+
+            </ul>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="md:col-span-3 p-6">
+
+            <h2 class="text-3xl font-bold mb-6">
+                Dashboard Overview
+            </h2>
+
+            <!-- Statistics Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-gray-500">Total Users</h3>
+                    <p class="text-3xl font-bold">1,250</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-gray-500">Courses</h3>
+                    <p class="text-3xl font-bold">48</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-gray-500">Reports</h3>
+                    <p class="text-3xl font-bold">125</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-gray-500">Revenue</h3>
+                    <p class="text-3xl font-bold">$12K</p>
+                </div>
+
+            </div>
+
+            <!-- Recent Users Table -->
+            <div class="bg-white rounded-lg shadow p-6 mb-8 overflow-x-auto">
+
+                <h3 class="text-2xl font-semibold mb-4">
+                    Recent Users
+                </h3>
+
+                <table class="w-full border-collapse">
+
+                    <thead>
+                        <tr class="bg-gray-200">
+                            <th class="p-3 text-left">ID</th>
+                            <th class="p-3 text-left">Name</th>
+                            <th class="p-3 text-left">Email</th>
+                            <th class="p-3 text-left">Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr class="border-b">
+                            <td class="p-3">1</td>
+                            <td class="p-3">John Doe</td>
+                            <td class="p-3">john@gmail.com</td>
+                            <td class="p-3 text-green-600">Active</td>
+                        </tr>
+
+                        <tr class="border-b">
+                            <td class="p-3">2</td>
+                            <td class="p-3">Sarah Smith</td>
+                            <td class="p-3">sarah@gmail.com</td>
+                            <td class="p-3 text-green-600">Active</td>
+                        </tr>
+
+                        <tr class="border-b">
+                            <td class="p-3">3</td>
+                            <td class="p-3">David Lee</td>
+                            <td class="p-3">david@gmail.com</td>
+                            <td class="p-3 text-red-600">Inactive</td>
+                        </tr>
+
+                        <tr>
+                            <td class="p-3">4</td>
+                            <td class="p-3">Emma Wilson</td>
+                            <td class="p-3">emma@gmail.com</td>
+                            <td class="p-3 text-green-600">Active</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <!-- Charts Placeholder -->
+            <div class="bg-white rounded-lg shadow p-6">
+
+                <h3 class="text-2xl font-semibold mb-4">
+                    Analytics Chart
+                </h3>
+
+                <div class="h-64 bg-gray-200 rounded-lg flex justify-center items-center">
+                    <p class="text-gray-600 text-xl">
+                        Chart Placeholder
+                    </p>
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+</html>

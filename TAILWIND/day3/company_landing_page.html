@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Landing Page</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-900 text-white sticky top-0">
+        <div class="container mx-auto flex justify-between items-center p-4">
+
+            <h1 class="text-2xl font-bold">TechCorp</h1>
+
+            <ul class="flex gap-6 items-center">
+                <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+                <li><a href="#about" class="hover:text-blue-400">About</a></li>
+                <li><a href="#services" class="hover:text-blue-400">Services</a></li>
+
+                <!-- Dropdown -->
+                <li class="relative group">
+                    <button class="hover:text-blue-400">
+                        More ▼
+                    </button>
+
+                    <div class="absolute hidden group-hover:block bg-white text-black shadow-lg rounded w-40">
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Careers</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Blog</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Support</a>
+                    </div>
+                </li>
+
+                <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <section id="home"
+        class="h-screen bg-cover bg-center flex items-center justify-center text-center text-white"
+        style="background-image:url('../images/responsive_tw/bg.jpeg');">
+
+        <div class="bg-black/50 p-8 rounded">
+            <h1 class="text-5xl font-bold mb-4">
+                Welcome to TechCorp
+            </h1>
+
+            <p class="text-lg mb-6">
+                Innovative Solutions For Your Business
+            </p>
+
+            <button class="bg-blue-600 px-6 py-3 rounded hover:bg-blue-700">
+                Get Started
+            </button>
+        </div>
+
+    </section>
+
+    <!-- About -->
+    <section id="about" class="container mx-auto py-16 px-6">
+
+        <div class="flex flex-col md:flex-row items-center gap-10">
+
+            <!-- Image Left -->
+            <div class="md:w-1/2">
+                <img
+                    src="../images/responsive_tw/about-us.png"
+                    alt="About"
+                    class="rounded-lg shadow-lg w-full">
+            </div>
+
+            <!-- Content Right -->
+            <div class="md:w-1/2">
+                <h2 class="text-4xl font-bold mb-4">
+                    About Us
+                </h2>
+
+                <p class="text-gray-600 mb-4">
+                    We provide innovative digital solutions,
+                    web development, cloud services and consulting
+                    for businesses worldwide.
+                </p>
+
+                <p class="text-gray-600 mb-6">
+                    Our experienced team focuses on quality,
+                    creativity and customer satisfaction.
+                </p>
+
+                <button class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">
+                    Learn More
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="bg-gray-100 py-16">
+
+        <div class="container mx-auto px-6">
+
+            <h2 class="text-4xl font-bold text-center mb-10">
+                Our Services
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl">
+                    <h3 class="text-xl font-bold mb-2">Web Development</h3>
+                    <p>Modern and responsive websites.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl">
+                    <h3 class="text-xl font-bold mb-2">App Development</h3>
+                    <p>Android and iOS applications.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl">
+                    <h3 class="text-xl font-bold mb-2">UI/UX Design</h3>
+                    <p>Creative user experiences.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl">
+                    <h3 class="text-xl font-bold mb-2">Cloud Services</h3>
+                    <p>Secure cloud infrastructure.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl">
+                    <h3 class="text-xl font-bold mb-2">Digital Marketing</h3>
+                    <p>SEO and social media marketing.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl">
+                    <h3 class="text-xl font-bold mb-2">Consulting</h3>
+                    <p>Professional business guidance.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-16">
+
+        <div class="container mx-auto px-6">
+
+            <h2 class="text-4xl font-bold text-center mb-10">
+                Contact Us
+            </h2>
+
+            <div class="max-w-2xl mx-auto">
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    class="w-full border p-3 mb-4 rounded">
+
+                <input
+                    type="email"
+                    placeholder="Your Email"
+                    class="w-full border p-3 mb-4 rounded">
+
+                <textarea
+                    rows="5"
+                    placeholder="Your Message"
+                    class="w-full border p-3 mb-4 rounded"></textarea>
+
+                <button
+                    class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">
+                    Send Message
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center p-5">
+        <p>© 2026 TechCorp. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

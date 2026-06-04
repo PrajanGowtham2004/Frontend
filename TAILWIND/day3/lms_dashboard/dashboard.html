@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>LMS Dashboard</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="bg-slate-100">
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+
+<div class="container-fluid">
+
+<a class="navbar-brand fw-bold">
+LMS Dashboard
+</a>
+
+<button class="navbar-toggler"
+data-bs-toggle="collapse"
+data-bs-target="#navbarNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarNav">
+
+<form class="d-flex ms-auto me-3">
+<input
+class="form-control"
+placeholder="Search">
+</form>
+
+<div class="dropdown">
+
+<button
+class="btn btn-light dropdown-toggle"
+data-bs-toggle="dropdown">
+Admin
+</button>
+
+<ul class="dropdown-menu">
+
+<li>
+<a class="dropdown-item" href="profile.html">
+Profile
+</a>
+</li>
+
+<li>
+<a class="dropdown-item" href="#">
+Settings
+</a>
+</li>
+
+<li>
+<a class="dropdown-item" href="index.html">
+Logout
+</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- Layout -->
+
+<div class="container-fluid">
+
+<div class="row">
+
+<!-- Sidebar -->
+
+<div class="col-lg-2 bg-dark text-white min-vh-100 p-4">
+
+<h3 class="mb-4">Menu</h3>
+
+<ul class="list-unstyled">
+
+<li class="mb-3">
+<i class="fas fa-chart-line me-2"></i>
+Dashboard
+</li>
+
+<li class="mb-3">
+<i class="fas fa-users me-2"></i>
+Students
+</li>
+
+<li class="mb-3">
+<i class="fas fa-book me-2"></i>
+<a href="courses.html" class="text-white text-decoration-none">
+Courses
+</a>
+</li>
+
+<li class="mb-3">
+<i class="fas fa-file-alt me-2"></i>
+Assignments
+</li>
+
+<li class="mb-3">
+<i class="fas fa-certificate me-2"></i>
+Certificates
+</li>
+
+<li class="mb-3">
+<i class="fas fa-chart-bar me-2"></i>
+Reports
+</li>
+
+<li class="mb-3">
+<i class="fas fa-user me-2"></i>
+<a href="profile.html" class="text-white text-decoration-none">
+Profile
+</a>
+</li>
+
+</ul>
+
+</div>
+
+<!-- Main Content -->
+
+<div class="col-lg-10 p-4">
+
+<h2 class="mb-4 fw-bold">
+Dashboard Overview
+</h2>
+
+<!-- Statistics Cards -->
+
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+
+<div class="card shadow rounded-xl">
+<div class="card-body">
+<h5>Total Students</h5>
+<h2>1250</h2>
+</div>
+</div>
+
+<div class="card shadow rounded-xl">
+<div class="card-body">
+<h5>Courses</h5>
+<h2>48</h2>
+</div>
+</div>
+
+<div class="card shadow rounded-xl">
+<div class="card-body">
+<h5>Trainers</h5>
+<h2>32</h2>
+</div>
+</div>
+
+<div class="card shadow rounded-xl">
+<div class="card-body">
+<h5>Revenue</h5>
+<h2>₹2,45,000</h2>
+</div>
+</div>
+
+<div class="card shadow rounded-xl">
+<div class="card-body">
+<h5>Certificates</h5>
+<h2>920</h2>
+</div>
+</div>
+
+<div class="card shadow rounded-xl">
+<div class="card-body">
+<h5>Assignments</h5>
+<h2>156</h2>
+</div>
+</div>
+
+<div class="card shadow rounded-xl">
+<div class="card-body">
+<h5>Completed</h5>
+<h2>780</h2>
+</div>
+</div>
+
+<div class="card shadow rounded-xl">
+<div class="card-body">
+<h5>New Registrations</h5>
+<h2>84</h2>
+</div>
+</div>
+
+</div>
+
+<!-- Recent Students -->
+
+<div class="card shadow mt-4">
+
+<div class="card-body">
+
+<h4>Recent Students</h4>
+
+<div class="table-responsive">
+
+<table class="table table-striped">
+
+<thead>
+
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Course</th>
+<th>Status</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>101</td>
+<td>John Doe</td>
+<td>Java Full Stack</td>
+<td class="text-success">Active</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td>Sarah Smith</td>
+<td>Data Analytics</td>
+<td class="text-success">Active</td>
+</tr>
+
+<tr>
+<td>103</td>
+<td>David Lee</td>
+<td>Python</td>
+<td class="text-warning">Pending</td>
+</tr>
+
+<tr>
+<td>104</td>
+<td>Emma Wilson</td>
+<td>UI UX</td>
+<td class="text-success">Active</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Notifications -->
+
+<div class="card shadow mt-4">
+
+<div class="card-body">
+
+<h4>Notifications</h4>
+
+<ul>
+
+<li>New Course Added - Spring Boot</li>
+
+<li>15 Students Completed Java Module</li>
+
+<li>Assignment Deadline Tomorrow</li>
+
+<li>Placement Drive on June 25</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<!-- Upcoming Events -->
+
+<div class="card shadow mt-4">
+
+<div class="card-body">
+
+<h4>Upcoming Events</h4>
+
+<table class="table">
+
+<tr>
+<th>Event</th>
+<th>Date</th>
+</tr>
+
+<tr>
+<td>Java Workshop</td>
+<td>June 10</td>
+</tr>
+
+<tr>
+<td>Hackathon</td>
+<td>June 15</td>
+</tr>
+
+<tr>
+<td>Resume Session</td>
+<td>June 18</td>
+</tr>
+
+<tr>
+<td>Placement Drive</td>
+<td>June 25</td>
+</tr>
+
+</table>
+
+<a href="courses.html" class="btn btn-primary">
+View Courses
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<footer class="bg-dark text-white text-center p-3">
+© 2026 LMS Dashboard
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

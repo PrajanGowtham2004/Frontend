@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management UI</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-600 text-white shadow-lg">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Student Manager</h1>
+
+            <ul class="flex gap-6">
+                <li><a href="#" class="hover:text-gray-200">Home</a></li>
+                <li><a href="#" class="hover:text-gray-200">Students</a></li>
+                <li><a href="#" class="hover:text-gray-200">Courses</a></li>
+                <li><a href="#" class="hover:text-gray-200">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Add Student Form -->
+    <section class="container mx-auto px-6 py-8">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+
+            <h2 class="text-2xl font-bold mb-4">
+                Add Student
+            </h2>
+
+            <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                <input type="text"
+                placeholder="Student Name"
+                class="border p-3 rounded-lg">
+
+                <input type="text"
+                placeholder="Course"
+                class="border p-3 rounded-lg">
+
+                <input type="email"
+                placeholder="Email"
+                class="border p-3 rounded-lg">
+
+                <input type="tel"
+                placeholder="Phone Number"
+                class="border p-3 rounded-lg">
+
+                <input type="text"
+                placeholder="Photo URL"
+                class="border p-3 rounded-lg md:col-span-2">
+
+                <button
+                class="bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 md:col-span-2">
+                    Add Student
+                </button>
+
+            </form>
+
+        </div>
+    </section>
+
+    <!-- Search Bar -->
+    <section class="container mx-auto px-6 mb-8">
+
+        <div class="bg-white p-4 rounded-lg shadow-lg flex items-center gap-3">
+
+            <i class="fas fa-search text-gray-500"></i>
+
+            <input
+            type="text"
+            placeholder="Search Student..."
+            class="w-full outline-none">
+
+        </div>
+
+    </section>
+
+    <!-- Student Cards -->
+    <section class="container mx-auto px-6 pb-10">
+
+        <h2 class="text-3xl font-bold mb-6">
+            Student List
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <!-- Card 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl">
+                <img
+                src="../images/student_management/harry.jpeg"
+                class="w-full h-56 object-cover">
+
+                <div class="p-4">
+                    <h3 class="text-xl font-bold">Harry potter</h3>
+                    <p class="text-gray-600">Full Stack Development</p>
+                    <p class="mt-2">harry@gmail.com</p>
+                    <p>9876543210</p>
+
+                    <div class="flex gap-2 mt-4">
+                        <button class="bg-yellow-500 text-white px-4 py-2 rounded">
+                            Edit
+                        </button>
+
+                        <button class="bg-red-500 text-white px-4 py-2 rounded">
+                            Delete
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl">
+                <img
+                src="../images/student_management/hermione.jpeg"
+                class="w-full h-56 object-cover">
+
+                <div class="p-4">
+                    <h3 class="text-xl font-bold">Hermione Granger</h3>
+                    <p class="text-gray-600">Data Analytics</p>
+                    <p class="mt-2">hermione@gmail.com</p>
+                    <p>9876543211</p>
+
+                    <div class="flex gap-2 mt-4">
+                        <button class="bg-yellow-500 text-white px-4 py-2 rounded">
+                            Edit
+                        </button>
+
+                        <button class="bg-red-500 text-white px-4 py-2 rounded">
+                            Delete
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl">
+                <img
+                src="../images/student_management/ron.jpeg"
+                class="w-full h-56 object-cover">
+
+                <div class="p-4">
+                    <h3 class="text-xl font-bold">Ron Weasley</h3>
+                    <p class="text-gray-600">Web Development</p>
+                    <p class="mt-2">ron@gmail.com</p>
+                    <p>9876543212</p>
+
+                    <div class="flex gap-2 mt-4">
+                        <button class="bg-yellow-500 text-white px-4 py-2 rounded">
+                            Edit
+                        </button>
+
+                        <button class="bg-red-500 text-white px-4 py-2 rounded">
+                            Delete
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl">
+                <img
+                src="../images/student_management/draco.jpeg"
+                class="w-full h-56 object-cover">
+
+                <div class="p-4">
+                    <h3 class="text-xl font-bold">Draco Malfoy</h3>
+                    <p class="text-gray-600">UI/UX Design</p>
+                    <p class="mt-2">draco@gmail.com</p>
+                    <p>9876543213</p>
+
+                    <div class="flex gap-2 mt-4">
+                        <button class="bg-yellow-500 text-white px-4 py-2 rounded">
+                            Edit
+                        </button>
+
+                        <button class="bg-red-500 text-white px-4 py-2 rounded">
+                            Delete
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl">
+                <img
+                src="../images/student_management/ginny.jpeg"
+                class="w-full h-56 object-cover">
+
+                <div class="p-4">
+                    <h3 class="text-xl font-bold">Ginny Weasley</h3>
+                    <p class="text-gray-600">UI/UX Design</p>
+                    <p class="mt-2">ginny@gmail.com</p>
+                    <p>9876543213</p>
+
+                    <div class="flex gap-2 mt-4">
+                        <button class="bg-yellow-500 text-white px-4 py-2 rounded">
+                            Edit
+                        </button>
+
+                        <button class="bg-red-500 text-white px-4 py-2 rounded">
+                            Delete
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-5">
+        <p>© 2026 Student Management System. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
