@@ -1,147 +1,349 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Tasks</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+
+<body class="bg-slate-100 scroll-smooth">
+
+    <!-- Navbar -->
+    <nav class="bg-slate-900 text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-cyan-400">
+                Task Portfolio
+            </h1>
+
+            <ul class="hidden md:flex gap-8 font-medium">
+                <li><a href="#html" class="hover:text-cyan-400 transition duration-300">HTML</a></li>
+                <li><a href="#css" class="hover:text-cyan-400 transition duration-300">CSS</a></li>
+                <li><a href="#bootstrap" class="hover:text-cyan-400 transition duration-300">Bootstrap</a></li>
+                <li><a href="#tailwind" class="hover:text-cyan-400 transition duration-300">Tailwind</a></li>
+                <li><a href="#javascript" class="hover:text-cyan-400 transition duration-300">JavaScript</a></li>
+                <li><a href="#weekly" class="hover:text-cyan-400 transition duration-300">Weekly Tasks</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-700 text-white py-24">
+        <div class="container mx-auto text-center px-6">
+            <h1 class="text-5xl font-bold mb-4">
+                Web Development Portfolio
+            </h1>
+
+            <p class="text-xl mb-8">
+                HTML • CSS • Bootstrap • Tailwind CSS • JavaScript Projects & Assignments
+            </p>
+
+            <a href="#html"
+                class="bg-white text-blue-700 px-8 py-3 rounded-lg font-semibold hover:bg-slate-200 hover:scale-105 transition duration-300 inline-block">
+                Explore Tasks
+            </a>
+        </div>
+    </section>
+
+    <!-- HTML -->
+    <section id="html" class="container mx-auto px-6 py-12">
+        <h2 class="text-4xl font-bold text-blue-700 mb-6 text-center">
+            HTML Tasks
+        </h2>
+
+        <div class="overflow-x-auto shadow-xl rounded-xl">
+            <table class="w-full bg-white">
+                <thead class="bg-blue-600 text-white">
+                    <tr>
+                        <th class="p-4">Day</th>
+                        <th class="p-4">Task</th>
+                        <th class="p-4">Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr class="border hover:bg-blue-50 transition">
+                        <td class="p-4">Day 4</td>
+                        <td class="p-4">Assignment 1</td>
+                        <td class="p-4"><a href="HTML/Day4/tn_election_2026_inside_nav.html"><button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Open</button></a></td>
+                    </tr>
+
+                    <tr class="border hover:bg-blue-50 transition">
+                        <td class="p-4">Day 4</td>
+                        <td class="p-4">Assignment 2</td>
+                        <td class="p-4"><a href="HTML/Day4/tn_election_2026_newtab.html"><button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Open</button></a></td>
+                    </tr>
+
+                    <tr class="border hover:bg-blue-50 transition">
+                        <td class="p-4">Day 5</td>
+                        <td class="p-4">KTM Motorcycle Website</td>
+                        <td class="p-4"><a href="HTML/Day5/ktm.html"><button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Open</button></a></td>
+                    </tr>
+
+                    <tr class="border hover:bg-blue-50 transition">
+                        <td class="p-4">Day 6</td>
+                        <td class="p-4">Form Elements</td>
+                        <td class="p-4"><a href="HTML/Day6/form_elements.html"><button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Open</button></a></td>
+                    </tr>
+
+                    <tr class="border hover:bg-blue-50 transition">
+                        <td class="p-4">Day 7</td>
+                        <td class="p-4">Form and Table</td>
+                        <td class="p-4"><a href="HTML/Day7/form_and_table.html"><button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Open</button></a></td>
+                    </tr>
+
+                    <tr class="border hover:bg-blue-50 transition">
+                        <td class="p-4">Day 7</td>
+                        <td class="p-4">College Admission Form</td>
+                        <td class="p-4"><a href="HTML/Day7/college_admission_form.html"><button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Open</button></a></td>
+                    </tr>
+
+                    <tr class="border hover:bg-blue-50 transition">
+                        <td class="p-4">Day 7</td>
+                        <td class="p-4">Employee Details Table</td>
+                        <td class="p-4"><a href="HTML/Day7/employee_details_table.html"><button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Open</button></a></td>
+                    </tr>
+
+                    <tr class="border hover:bg-blue-50 transition">
+                        <td class="p-4">Day 7</td>
+                        <td class="p-4">Login & Signup Form</td>
+                        <td class="p-4"><a href="HTML/Day7/login_signup_form.html"><button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Open</button></a></td>
+                    </tr>
+
+                    <tr class="border hover:bg-blue-50 transition">
+                        <td class="p-4">Day 8</td>
+                        <td class="p-4">Multimedia Webpage</td>
+                        <td class="p-4"><a href="HTML/Day8/html5_multimedia_webpage.html"><button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Open</button></a></td>
+                    </tr>
 
 
-	<div>
-		<h1>HTML Task List</h1>
-		<h2>Day 4</h2>
-		<a href="HTML/Day4/tn_election_2026_inside_nav.html">Assignment 1</a><br>
-        <a href="HTML/Day4/tn_election_2026_newtab.html">Assignment 2</a>
-	</div>
+                    <tr class="border hover:bg-blue-50 transition">
+                        <td class="p-4">Day 9</td>
+                        <td class="p-4">HTML Learning Webpage</td>
+                        <td class="p-4"><a href="HTML/Day9/html_learning_wp.html"><button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Open</button></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
 
-	<div>
-		<h2>Day 5</h2>
-		<a href="HTML/Day5/ktm.html">KTM Motorcycle Website</a><br>
-	</div>
+    <!-- CSS -->
+    <section id="css" class="container mx-auto px-6 py-12">
+        <h2 class="text-4xl font-bold text-green-700 mb-6 text-center">
+            CSS Tasks
+        </h2>
 
-	<div>
-		<h2>Day 6</h2>
-		<a href="HTML/Day6/form_elements.html">Form Elements</a><br>
-	</div>
+        <div class="overflow-x-auto shadow-xl rounded-xl">
+            <table class="w-full bg-white">
+                <thead class="bg-green-600 text-white">
+                    <tr>
+                        <th class="p-4">Day</th>
+                        <th class="p-4">Task</th>
+                        <th class="p-4">Action</th>
+                    </tr>
+                </thead>
 
-	<div>
-		<h2>Day 7</h2>
-		<a href="HTML/Day7/form_and_table.html">Form and Table</a><br>
-		<a href="HTML/Day7/college_admission_form.html">College Admission Form</a><br>
-		<a href="HTML/Day7/employee_details_table.html">Employee Details Table</a><br>
-		<a href="HTML/Day7/login_signup_form.html">Login and Signup Form</a><br>
-		<a href="HTML/Day7/product_datails_table.html">Product Details Table</a><br>
-		<a href="HTML/Day7/student_registration_form.html">Student Registration Form</a><br>
-		<a href="HTML/Day7/resume_builder_form.html">Resume Builder Form</a><br>
+                <tbody>
+                    <tr class="border hover:bg-green-50"><td class="p-4">Day 1</td><td class="p-4">Inline CSS</td><td class="p-4"><a href="CSS/day1/inline.html"><button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700 transition">Open</button></a></td></tr>
 
-	</div>
+                    <tr class="border hover:bg-green-50"><td class="p-4">Day 1</td><td class="p-4">Internal CSS</td><td class="p-4"><a href="CSS/day1/internal.html"><button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700 transition">Open</button></a></td></tr>
 
-	<div>
-		<h2>Day 8</h2>
-		<a href="HTML/Day8/html5_multimedia_webpage.html">Multimedia Webpage</a><br>
-	</div>
-	<div>
-		<h2>Day 9</h2>
-		<a href="HTML/Day9/holiday_travels.html">Holiday Travels Website(class task)</a><br>
-		<a href="HTML/Day9/html_learning_wp.html">HTML5 Learning Webpage</a><br>
-	</div>
+                    <tr class="border hover:bg-green-50"><td class="p-4">Day 1</td><td class="p-4">External CSS</td><td class="p-4"><a href="CSS/day1/external.html"><button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700 transition">Open</button></a></td></tr>
 
-	<div>
-		<H1>CSS Task List</H1>
-	</div>
+                    <tr class="border hover:bg-green-50"><td class="p-4">Day 2</td><td class="p-4">CSS Selectors</td><td class="p-4"><a href="CSS/day2/external2.html"><button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700 transition">Open</button></a></td></tr>
 
-	<div>
-		<h2>Day 1</h2>
-		<a href="CSS/assets/text/task1.txt">Task 1</a><br>
-		<a href="CSS/day1/inline.html">Inline CSS</a><br>
-		<a href="CSS/day1/internal.html">Internal CSS</a><br>
-		<a href="CSS/day1/external.html">External CSS</a><br>
-	</div>
+                    <tr class="border hover:bg-green-50"><td class="p-4">Day 3</td><td class="p-4">One Box</td><td class="p-4"><a href="CSS/day3/onebox.html"><button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700 transition">Open</button></a></td></tr>
 
-	<div>
-		<h2>Day 2</h2>
-		<a href="CSS/day2/external2.html">CSS Selectors</a><br>
-	</div>
+                    <tr class="border hover:bg-green-50"><td class="p-4">Project</td><td class="p-4">PG Finder</td><td class="p-4"><a href="CSS/pg_finder/index.html"><button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700 transition">Open</button></a></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
 
-	<div>
-		<h2>Day 3</h2>
-		<a href="CSS/day3/onebox.html">One Box</a><br>
-		<a href="CSS/day3/boxinsidebox.html">Box Inside Box</a><br>
-		<a href="CSS/day3/three_nested_box.html">Three Nested Boxes</a><br>
-	</div>
-	<div>
-		<h2>Day 4</h2>
-		<a href="CSS/day4/flex.html">Flex box</a><br>
-	</div>
-	
-	<div>
-		<h2>Day 5</h2>
-		<a href="CSS/day5/navbar.html">Decathlon clone</a><br>
-	</div>
+    <!-- Bootstrap -->
+    <section id="bootstrap" class="container mx-auto px-6 py-12">
+        <h2 class="text-4xl font-bold text-purple-700 mb-6 text-center">
+            Bootstrap Tasks
+        </h2>
 
-	<div>
-		<h2>Day 6</h2>
-		<a href="CSS/day6/figma.html">Figma Clone</a><br>
-	</div>
-	
-	<div>
-		<h2>Day 7</h2>
-		<a href="CSS/day7/grid_gallery.html">Grid Gallery</a><br>
-		<a href="CSS/day7/thumbnail.html">Thumbnail</a><br>
-	</div>
+        <div class="overflow-x-auto shadow-xl rounded-xl">
+            <table class="w-full bg-white">
+                <thead class="bg-purple-600 text-white">
+                    <tr>
+                        <th class="p-4">Day</th>
+                        <th class="p-4">Task</th>
+                        <th class="p-4">Action</th>
+                    </tr>
+                </thead>
 
-	<div>
-		<h2>Day 8</h2>
-		<a href="CSS/day8/grid_and_animation.html">Grid and Animation</a><br>
-	</div>
+                <tbody>
+                    <tr class="border hover:bg-purple-50">
+                        <td class="p-4">Day 1</td>
+                        <td class="p-4">Bootstrap Concepts</td>
+                        <td class="p-4">
+                            <a href="BOOTSTRAP/day1/bootstrap_basic.html">
+                                <button class="bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-700 transition">
+                                    Open
+                                </button>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
 
-	<div>
-		<h2>Day 9</h2>
-		<a href="CSS/day9/css_concepts.html">CSS Concepts</a><br>
-	</div>
+    <!-- Tailwind -->
+    <section id="tailwind" class="container mx-auto px-6 py-12">
+        <h2 class="text-4xl font-bold text-cyan-700 mb-6 text-center">
+            Tailwind CSS Tasks
+        </h2>
 
-	<div>
-		<h2>Project</h2>
-		<a href="CSS/pg_finder/index.html">PG Finder</a><br>
-	</div>
-	
-    <div>
-		<H1>Bootstrap Task List</H1>
-	</div>
-	<div>
-		<h2>Day 1</h2>
-		<a href="BOOTSTRAP/day1/bootstrap_basic.html">Bootstrap Concepts</a><br>
-	</div>
+        <div class="overflow-x-auto shadow-xl rounded-xl">
+            <table class="w-full bg-white">
+                <thead class="bg-cyan-600 text-white">
+                    <tr>
+                        <th class="p-4">Day</th>
+                        <th class="p-4">Task</th>
+                        <th class="p-4">Action</th>
+                    </tr>
+                </thead>
 
-	<div>
-		<H1>Tailwind CSS Task List</H1>
-	</div>
-	<div>
-		<h2>Day 1</h2>
-		<a href="TAILWIND/day1/tw_css.html">Tailwind CSS Concepts</a><br>
-	</div>
+                <tbody>
+                    <tr class="border hover:bg-cyan-50"><td class="p-4">Day 1</td><td class="p-4">Tailwind CSS Concepts</td><td class="p-4"><a href="TAILWIND/day1/tw_css.html"><button class="bg-cyan-500 text-white px-4 py-2 rounded hover:bg-cyan-700 transition">Open</button></a></td></tr>
+
+                    <tr class="border hover:bg-cyan-50"><td class="p-4">Day 2</td><td class="p-4">Course Website</td><td class="p-4"><a href="TAILWIND/day2/responsive_tw.html"><button class="bg-cyan-500 text-white px-4 py-2 rounded hover:bg-cyan-700 transition">Open</button></a></td></tr>
+
+                    <tr class="border hover:bg-cyan-50"><td class="p-4">Day 3</td><td class="p-4">Course Website 2</td><td class="p-4"><a href="TAILWIND/day3/course_wp.html"><button class="bg-cyan-500 text-white px-4 py-2 rounded hover:bg-cyan-700 transition">Open</button></a></td></tr>
+
+                    <tr class="border hover:bg-cyan-50"><td class="p-4">Day 3</td><td class="p-4">Company Landing Page</td><td class="p-4"><a href="TAILWIND/day3/company_landing_page.html"><button class="bg-cyan-500 text-white px-4 py-2 rounded hover:bg-cyan-700 transition">Open</button></a></td></tr>
+
+                    <tr class="border hover:bg-cyan-50"><td class="p-4">Day 3</td><td class="p-4">Admin Dashboard</td><td class="p-4"><a href="TAILWIND/day3/admin_dashboard.html"><button class="bg-cyan-500 text-white px-4 py-2 rounded hover:bg-cyan-700 transition">Open</button></a></td></tr>
+
+                    <tr class="border hover:bg-cyan-50"><td class="p-4">Day 3</td><td class="p-4">E-Commerce Website</td><td class="p-4"><a href="TAILWIND/day3/ecommerce.html"><button class="bg-cyan-500 text-white px-4 py-2 rounded hover:bg-cyan-700 transition">Open</button></a></td></tr>
+
+                    <tr class="border hover:bg-cyan-50"><td class="p-4">Day 3</td><td class="p-4">Student Management</td><td class="p-4"><a href="TAILWIND/day3/student_management.html"><button class="bg-cyan-500 text-white px-4 py-2 rounded hover:bg-cyan-700 transition">Open</button></a></td></tr>
+
+                    <tr class="border hover:bg-cyan-50"><td class="p-4">Day 3</td><td class="p-4">LMS Dashboard</td><td class="p-4"><a href="TAILWIND/day3/lms_dashboard/index.html"><button class="bg-cyan-500 text-white px-4 py-2 rounded hover:bg-cyan-700 transition">Open</button></a></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- JavaScript Tasks -->
+<section id="javascript" class="container mx-auto px-6 py-12">
     
-	<div> 
-		<h2>Day 2</h2>
-		<a href="TAILWIND/day2/responsive_tw.html">Course Website</a><br>
-	</div>
+    <h2 class="text-4xl font-bold text-center text-yellow-600 mb-6">
+        JavaScript Tasks
+    </h2>
 
-	<div>
-		<h2>Day 3</h2>
-		<a href="TAILWIND/day3/course_wp.html">Course Website 2</a><br>
-		<a href="TAILWIND/day3/company_landing_page.html">Company Landing Page</a><br>
-		<a href="TAILWIND/day3/admin_dashboard.html">Admin Dashboard</a><br>
-		<a href="TAILWIND/day3/ecommerce.html">E-Commerce Website</a><br>
-		<a href="TAILWIND/day3/student_management.html">Student Management</a><br>
-		<a href="TAILWIND/day3/lms_dashboard/index.html">LMS Dashboard - Sign in</a><br>
-	</div>
+    <div class="overflow-x-auto shadow-xl rounded-xl">
+        <table class="w-full bg-white">
 
-	<div>
-		<h2>WEEKLY TEAM TASK 2</h2>
-		<a href="TASK/one_task.html">BUG FIX</a><br>
-		<a href="TASK/two_task.html">BUG FIX 2</a><br>
-	</div>
+            <thead class="bg-yellow-500 text-white">
+                <tr>
+                    <th class="p-4">Day</th>
+                    <th class="p-4">Task Name</th>
+                    <th class="p-4">Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr class="border hover:bg-yellow-50 transition">
+                    <td class="p-4">Day 1</td>
+                    <td class="p-4">JavaScript Basics</td>
+                    <td class="p-4">
+                        <a href="#">
+                            <button class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-700 transition">
+                                Open
+                            </button>
+                        </a>
+                    </td>
+                </tr>
+
+                
+
+               
+
+            </tbody>
+
+        </table>
+    </div>
+
+</section>
+
+    <!-- Weekly Team Tasks -->
+<section id="weekly" class="container mx-auto px-6 py-12">
+
+    <h2 class="text-4xl font-bold text-center text-red-700 mb-6">
+        Weekly Team Tasks
+    </h2>
+
+    <div class="overflow-x-auto shadow-xl rounded-xl">
+        <table class="w-full bg-white">
+
+            <thead class="bg-red-600 text-white">
+                <tr>
+                    <th class="p-4">Week</th>
+                    <th class="p-4">Task Name</th>
+                    <th class="p-4">Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr class="border hover:bg-red-50 transition">
+                    <td class="p-4">Week 1</td>
+                    <td class="p-4">Tourist Webpage</td>
+                    <td class="p-4">
+                        <a href="HTML/Day9/holiday_travels.html">
+                            <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-700 hover:scale-105 transition duration-300">
+                                Open
+                            </button>
+                        </a>
+                    </td>
+                </tr>
+
+                <tr class="border hover:bg-red-50 transition">
+                    <td class="p-4">Week 2</td>
+                    <td class="p-4">Bug Fix Task 1</td>
+                    <td class="p-4">
+                        <a href="TASK/one_task.html">
+                            <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-700 hover:scale-105 transition duration-300">
+                                Open
+                            </button>
+                        </a>
+                    </td>
+                </tr>
+
+                <tr class="border hover:bg-red-50 transition">
+                    <td class="p-4">Week 2</td>
+                    <td class="p-4">Bug Fix Task 2</td>
+                    <td class="p-4">
+                        <a href="TASK/two_task.html">
+                            <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-700 hover:scale-105 transition duration-300">
+                                Open
+                            </button>
+                        </a>
+                    </td>
+                </tr>
+
+                
+
+            </tbody>
+
+        </table>
+    </div>
+
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white text-center py-6 mt-10">
+        <h3 class="text-2xl font-bold">Web Development Portfolio</h3>
+        <p class="mt-2">HTML • CSS • Bootstrap • Tailwind CSS • JavaScript</p>
+        <p class="mt-2 text-slate-400">© 2026 Prajan Gowtham</p>
+    </footer>
 
 </body>
 </html>
