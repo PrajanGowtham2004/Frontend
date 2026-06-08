@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Data Types</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-600 text-white p-4 shadow-lg">
+        <div class="container mx-auto">
+            <h1 class="text-2xl font-bold">JavaScript Data Types</h1>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-500 to-purple-600 text-white py-12 text-center">
+        <h2 class="text-4xl font-bold mb-4">JavaScript Data Types</h2>
+        <p class="text-lg">A complete overview of Primitive and Non-Primitive Data Types</p>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container mx-auto p-6">
+
+        <!-- Primitive Data Types -->
+        <div class="bg-white p-6 rounded-lg shadow-lg mb-8">
+            <h2 class="text-3xl font-bold text-blue-600 mb-4">
+                Primitive Data Types
+            </h2>
+            <p class="mb-4 text-gray-700">
+                Primitive data types store a single value and are immutable.
+            </p>
+
+            <div class="overflow-x-auto">
+                <table class="w-full border border-gray-300">
+                    <thead class="bg-blue-500 text-white">
+                        <tr>
+                            <th class="border p-3">Data Type</th>
+                            <th class="border p-3">Example</th>
+                            <th class="border p-3">typeof</th>
+                            <th class="border p-3">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr class="hover:bg-gray-100">
+                            <td class="border p-3 font-semibold">String</td>
+                            <td class="border p-3">"Prajan"</td>
+                            <td class="border p-3">string</td>
+                            <td class="border p-3">Stores text values.</td>
+                        </tr>
+
+                        <tr class="hover:bg-gray-100">
+                            <td class="border p-3 font-semibold">Number</td>
+                            <td class="border p-3">25, 3.14</td>
+                            <td class="border p-3">number</td>
+                            <td class="border p-3">Stores integers and decimals.</td>
+                        </tr>
+
+                        <tr class="hover:bg-gray-100">
+                            <td class="border p-3 font-semibold">Boolean</td>
+                            <td class="border p-3">true, false</td>
+                            <td class="border p-3">boolean</td>
+                            <td class="border p-3">Stores logical values.</td>
+                        </tr>
+
+                        <tr class="hover:bg-gray-100">
+                            <td class="border p-3 font-semibold">Undefined</td>
+                            <td class="border p-3">let x;</td>
+                            <td class="border p-3">undefined</td>
+                            <td class="border p-3">Variable declared but not assigned.</td>
+                        </tr>
+
+                        <tr class="hover:bg-gray-100">
+                            <td class="border p-3 font-semibold">Null</td>
+                            <td class="border p-3">let x = null;</td>
+                            <td class="border p-3">object</td>
+                            <td class="border p-3">Represents intentional empty value.</td>
+                        </tr>
+
+                        <tr class="hover:bg-gray-100">
+                            <td class="border p-3 font-semibold">BigInt</td>
+                            <td class="border p-3">123456789n</td>
+                            <td class="border p-3">bigint</td>
+                            <td class="border p-3">Stores very large integers.</td>
+                        </tr>
+
+                        <tr class="hover:bg-gray-100">
+                            <td class="border p-3 font-semibold">Symbol</td>
+                            <td class="border p-3">Symbol("id")</td>
+                            <td class="border p-3">symbol</td>
+                            <td class="border p-3">Creates unique identifiers.</td>
+                        </tr>
+
+                        <tr class="hover:bg-gray-100">
+                            <td class="border p-3 font-semibold">NaN</td>
+                            <td class="border p-3">Number("abc")</td>
+                            <td class="border p-3">number</td>
+                            <td class="border p-3">Represents invalid number result.</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Non Primitive Data Types -->
+        <div class="bg-white p-6 rounded-lg shadow-lg mb-8">
+            <h2 class="text-3xl font-bold text-green-600 mb-4">
+                Non-Primitive Data Types
+            </h2>
+
+            <p class="mb-4 text-gray-700">
+                Non-primitive data types can store collections of values.
+            </p>
+
+            <div class="overflow-x-auto">
+                <table class="w-full border border-gray-300">
+                    <thead class="bg-green-500 text-white">
+                        <tr>
+                            <th class="border p-3">Data Type</th>
+                            <th class="border p-3">Example</th>
+                            <th class="border p-3">typeof</th>
+                            <th class="border p-3">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr class="hover:bg-gray-100">
+                            <td class="border p-3 font-semibold">Object</td>
+                            <td class="border p-3">{name:"Prajan"}</td>
+                            <td class="border p-3">object</td>
+                            <td class="border p-3">Stores key-value pairs.</td>
+                        </tr>
+
+                        <tr class="hover:bg-gray-100">
+                            <td class="border p-3 font-semibold">Array</td>
+                            <td class="border p-3">["JS","Python"]</td>
+                            <td class="border p-3">object</td>
+                            <td class="border p-3">Stores multiple values.</td>
+                        </tr>
+
+                        <tr class="hover:bg-gray-100">
+                            <td class="border p-3 font-semibold">Function</td>
+                            <td class="border p-3">function greet(){}</td>
+                            <td class="border p-3">function</td>
+                            <td class="border p-3">Reusable block of code.</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Summary Cards -->
+        <h2 class="text-3xl font-bold text-center mb-6">
+            Quick Summary
+        </h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <div class="bg-blue-100 p-5 rounded-lg shadow hover:scale-105 transition">
+                <h3 class="font-bold text-xl mb-2">Primitive</h3>
+                <p>String, Number, Boolean, Undefined, Null, BigInt, Symbol</p>
+            </div>
+
+            <div class="bg-green-100 p-5 rounded-lg shadow hover:scale-105 transition">
+                <h3 class="font-bold text-xl mb-2">Non-Primitive</h3>
+                <p>Object, Array, Function</p>
+            </div>
+
+            <div class="bg-yellow-100 p-5 rounded-lg shadow hover:scale-105 transition">
+                <h3 class="font-bold text-xl mb-2">Important Notes</h3>
+                <p>typeof null → object, typeof NaN → number, Array is also an object.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center p-4 mt-10">
+        <p>JavaScript Data Types Reference | Created with HTML & Tailwind CSS</p>
+    </footer>
+
+</body>
+</html>
