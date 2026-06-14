@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function, Arrays and Objects</title>
+    <script>
+         console.log("FUNCTION");
+function greet() {
+    console.log("Hello");
+}
+greet();
+
+function showName() {
+    console.log("Prajan");
+}
+showName();
+
+function showCity() {
+    console.log("Chennai");
+}
+showCity();
+
+function showCountry() {
+    console.log("India");
+}
+showCountry();
+
+function showCourse() {
+    console.log("Java Full Stack");
+}
+showCourse();
+
+function showBike() {
+    console.log("NS400Z");
+}
+showBike();
+
+function showFruit() {
+    console.log("Mango");
+}
+showFruit();
+
+function showHero() {
+    console.log("Vijay");
+}
+showHero();
+
+function showMovie() {
+    console.log("Leo");
+}
+showMovie();
+
+function sayThanks() {
+    console.log("Thank You");
+}
+sayThanks();
+
+function greetUser(name) {
+    console.log("Hello " + name);
+}
+greetUser("Prajan");
+
+function showAge(age) {
+    console.log(age);
+}
+showAge(21);
+
+function add(a, b) {
+    console.log(a + b);
+}
+add(10, 20);
+
+function subtract(a, b) {
+    console.log(a - b);
+}
+subtract(50, 20);
+
+function multiply(a, b) {
+    console.log(a * b);
+}
+multiply(5, 6);
+
+function divide(a, b) {
+    console.log(a / b);
+}
+divide(20, 4);
+
+function showCourseName(course) {
+    console.log(course);
+}
+showCourseName("JavaScript");
+
+function showBikeName(bike) {
+    console.log(bike);
+}
+showBikeName("Pulsar NS400Z");
+
+function showFruitName(fruit) {
+    console.log(fruit);
+}
+showFruitName("Apple");
+
+function showHeroName(hero) {
+    console.log(hero);
+}
+showHeroName("Ajith");
+
+
+
+
+console.log("ARROW FUNCTION");
+const greetArrow1 = () => {
+    console.log("Hello");
+};
+greetArrow1();
+
+const showNameArrow2 = () => {
+    console.log("Prajan");
+};
+showNameArrow2();
+
+const showCityArrow3 = () => {
+    console.log("Chennai");
+};
+showCityArrow3();
+
+const showCountryArrow4 = () => {
+    console.log("India");
+};
+showCountryArrow4();
+
+const showCourseArrow5 = () => {
+    console.log("Java Full Stack");
+};
+showCourseArrow5();
+
+const showBikeArrow6 = () => {
+    console.log("NS400Z");
+};
+showBikeArrow6();
+
+const showFruitArrow7 = () => {
+    console.log("Mango");
+};
+showFruitArrow7();
+
+const showHeroArrow8 = () => {
+    console.log("Vijay");
+};
+showHeroArrow8();
+
+const showMovieArrow9 = () => {
+    console.log("Leo");
+};
+showMovieArrow9();
+
+const sayThanksArrow10 = () => {
+    console.log("Thank You");
+};
+sayThanksArrow10();
+
+const greetUserArrow11 = (userName) => {
+    console.log("Hello " + userName);
+};
+greetUserArrow11("Prajan");
+
+const showAgeArrow12 = (userAge) => {
+    console.log(userAge);
+};
+showAgeArrow12(21);
+
+const addArrow13 = (num1, num2) => {
+    console.log(num1 + num2);
+};
+addArrow13(10, 20);
+
+const subtractArrow14 = (num1, num2) => {
+    console.log(num1 - num2);
+};
+subtractArrow14(50, 20);
+
+const multiplyArrow15 = (num1, num2) => {
+    console.log(num1 * num2);
+};
+multiplyArrow15(5, 6);
+
+const divideArrow16 = (num1, num2) => {
+    console.log(num1 / num2);
+};
+divideArrow16(20, 4);
+
+const showCourseArrow17 = (courseName) => {
+    console.log(courseName);
+};
+showCourseArrow17("JavaScript");
+
+const showBikeArrow18 = (bikeName) => {
+    console.log(bikeName);
+};
+showBikeArrow18("Pulsar NS400Z");
+
+const showFruitArrow19 = (fruitName) => {
+    console.log(fruitName);
+};
+showFruitArrow19("Apple");
+
+const showHeroArrow20 = (heroName) => {
+    console.log(heroName);
+};
+showHeroArrow20("Ajith");
+
+
+
+
+console.log("ARRAYS");
+const fruitsArray1 = ["Apple", "Mango", "Orange"];
+
+const bikesArray2 = ["NS400Z", "Duke 390", "R15"];
+
+const heroesArray3 = ["Vijay", "Ajith", "Suriya"];
+
+const citiesArray4 = ["Chennai", "Madurai", "Coimbatore"];
+
+const colorsArray5 = ["Red", "Blue", "Green"];
+
+const numbersArray6 = [10, 20, 30, 40];
+
+const coursesArray7 = ["HTML", "CSS", "JavaScript"];
+
+const moviesArray8 = ["Leo", "GOAT", "Amaran"];
+
+const animalsArray9 = ["Lion", "Tiger", "Elephant"];
+
+const companiesArray10 = ["Google", "Microsoft", "Amazon"];
+const oneDArray1 = ["Apple", "Mango", "Orange"];
+
+const oneDArray2 = [10, 20, 30, 40];
+
+const twoDArray3 = [["Vijay", "Ajith"],["Suriya", "Dhanush"]];
+
+const twoDArray4 = [[1, 2],[3, 4]];
+
+const twoDArray5 = [["HTML", "CSS"],["JavaScript", "React"]];
+
+const fruitCollection = ["Fruits", [[["Apple", "Mango"], ["Orange", "Banana"], "Grapes"]]];
+
+const heroCollection = ["Heroes", [[["Vijay", "Ajith"], ["Suriya", "Dhanush"], "Sivakarthikeyan"]]];
+
+const bikeCollection = ["Bikes", [[["NS400Z", "R15"], ["Duke390", "Apache"], "Pulsar"]]];
+
+const courseCollection = ["Courses", [[["HTML", "CSS"], ["JavaScript", "React"], "Angular"]]];
+
+const movieCollection = ["Movies", [[["Leo", "GOAT"], ["Amaran", "Dragon"], "Master"]]];
+
+
+
+
+
+console.log("OBJECT");
+const studentObj1 = {name:"Prajan", age:21};
+
+const studentObj2 = {name:"Rahul", age:22};
+
+const bikeObj3 = {brand:"Bajaj", model:"NS400Z"};
+
+const bikeObj4 = {brand:"Yamaha", model:"R15"};
+
+const heroObj5 = {name:"Vijay", movie:"Leo"};
+
+const heroObj6 = {name:"Ajith", movie:"Vidaamuyarchi"};
+
+const fruitObj7 = {name:"Apple", color:"Red"};
+
+const fruitObj8 = {name:"Mango", color:"Yellow"};
+
+const movieObj9 = {title:"GOAT", year:2024};
+
+const movieObj10 = {title:"Amaran", year:2024};
+
+const courseObj11 = {course:"HTML", duration:"1 Month"};
+
+const courseObj12 = {course:"JavaScript", duration:"2 Months"};
+
+const companyObj13 = {name:"Google", location:"USA"};
+
+const companyObj14 = {name:"Microsoft", location:"USA"};
+
+const cityObj15 = {name:"Chennai", state:"Tamil Nadu"};
+
+const cityObj16 = {name:"Madurai", state:"Tamil Nadu"};
+
+const animalObj17 = {name:"Lion", type:"Wild"};
+
+const animalObj18 = {name:"Dog", type:"Pet"};
+
+const mobileObj19 = {brand:"Samsung", model:"S25"};
+
+const mobileObj20 = {brand:"Apple", model:"iPhone 17"};
+
+
+console.log("NESTED OBJECT");
+const studentNesObj1 = {name:"Prajan", address:{city:"Chennai", state:"Tamil Nadu"}};
+
+const studentNesObj2 = {name:"Rahul", address:{city:"Madurai", state:"Tamil Nadu"}};
+
+const bikeNesObj = {brand:"Bajaj", details:{model:"NS400Z", color:"Black"}};
+
+const bikeNesObj4 = {brand:"Yamaha", details:{model:"R15", color:"Blue"}};
+
+const heroNesObj5 = {name:"Vijay", movie:{title:"Leo", year:2023}};
+
+const heroNesObj6 = {name:"Ajith", movie:{title:"Vidaamuyarchi", year:2025}};
+
+const companyNesObj7 = {name:"Google", office:{city:"California", country:"USA"}};
+
+const companyNesObj8 = {name:"Microsoft", office:{city:"Seattle", country:"USA"}};
+
+const courseNesObj9 = {course:"Java", trainer:{name:"Arun", exp:"5 Years"}};
+
+const courseNesObj10 = {course:"JavaScript", trainer:{name:"Kumar", exp:"3 Years"}};
+
+const fruitNesObj1 = {category:"Fruits", items:["Apple","Mango","Orange"]};
+
+const heroNesObj2 = {category:"Heroes", items:["Vijay","Ajith","Suriya"]};
+
+const bikeCategoryNesObj = {category:"Bikes", items:["NS400Z","R15","Duke390"]};
+
+const courseNesObj4 = {category:"Courses", items:["HTML","CSS","JavaScript"]};
+
+const movieNesObj5 = {category:"Movies", items:["Leo","GOAT","Amaran"]};
+
+const studentDataNes1 = {students:[{name:"Prajan", age:21},{name:"Rahul", age:22}]};
+
+const bikeDataNes2 = {bikes:[{brand:"Bajaj", model:"NS400Z"},{brand:"Yamaha", model:"R15"}]};
+
+const heroDataNes3 = {heroes:[{name:"Vijay", movie:"Leo"},{name:"Ajith", movie:"Vidaamuyarchi"}]};
+
+const courseDataNes4 = {courses:[{name:"HTML", duration:"1 Month"},{name:"JavaScript", duration:"2 Months"}]};
+
+const movieDataNes5 = {movies:[{title:"GOAT", year:2024},{title:"Amaran", year:2024}]};
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

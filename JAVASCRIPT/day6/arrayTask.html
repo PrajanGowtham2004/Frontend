@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Task</title>
+    <script>console.log("TASK 1");
+let heros = ["Vijay","Ajith","Suriya","SK"];
+for(i=0;i<heros.length;i++){
+    console.log(heros[i]);
+}
+
+
+
+
+console.log("TASK 2");
+let movies = [200,500,800,400,600];
+let h = movies[0];
+for(let i=1; i<movies.length; i++){
+    if(h < movies[i]){
+        h=movies[i];
+    }
+}
+console.log("Highest Collection:",h);
+  
+  
+  
+    
+console.log("TASK 3");
+let movieCollection = [200,500,800,400,600];
+let l = movieCollection[0];
+for(let i=1; i < movieCollection.length; i++){
+    if(l > movieCollection[i]){
+        l = movieCollection[i];
+    }
+}
+console.log("Lowest Collection", l);
+
+
+
+
+console.log("TASK 4");
+let movie = [200,500,800,400,600];
+let mtotal = movie[0];
+for(i=1; i < movie.length; i++){
+    mtotal= mtotal + movie[i];
+}
+console.log("Total:", mtotal);
+
+
+
+console.log("TASK 5");
+let movieavg = [200,500,800,400,600];
+let mtotal1 = movieavg[0];
+for(i=1; i < movieavg.length; i++){
+    mtotal1= mtotal1 + movieavg[i];
+}
+let avgmovie = mtotal1/ movieavg.length-1+1
+console.log("Movie Average:",avgmovie);
+
+
+
+
+console.log("TASK 6");
+let heroCollections = ["Vijay","Ajith","Suriya","SK"];
+let reverseHeros = [];
+let r=0;
+for(i=heroCollections.length-1; i>=0; i--){
+    reverseHeros[r] = heroCollections[i];
+    r++
+}
+console.log(reverseHeros);
+
+
+
+
+console.log("TASK 7");
+fruits = ["Apple","Mango","Orange","Banana"]
+let e = true;
+for(i=0; i<=fruits.length; i++){
+    if(fruits[i] == "Mango"){
+        console.log("Fruit Found");
+        e = false;
+    }
+}
+if (e==true){
+    console.log("Fruit Not Found");
+} 
+
+
+
+
+console.log("TASK 8");
+let fruit = ["Apple","Mango","Orange","Banana"];
+let numFruits = 0;
+for(let fruits of fruit){
+    numFruits++;
+}
+console.log("Number Of Fruits:", numFruits);
+
+
+
+
+console.log("TASK 9");
+let longHeros = ["Vijay","Ajith","Sivakarthikeyan","SK"];
+let lh = 0;
+for(lheros = 0; lheros < longHeros.length ; lheros++){
+    if(longHeros[lh].length < longHeros[lheros].length){
+        lh = lheros;
+    }
+}
+console.log("Longest Hero Name:", longHeros[lh]);
+
+
+
+
+
+console.log("PALINDROME CHECK");
+
+let palindromeMovieName = "LEVEL";
+let reversedMovieName = "";
+
+for (let i = palindromeMovieName.length - 1; i >= 0; i--) {
+    reversedMovieName += palindromeMovieName[i];
+}
+
+if (palindromeMovieName === reversedMovieName) {
+    console.log("Palindrome");
+} else {
+    console.log("Not Palindrome");
+}
+
+
+
+
+console.log("REVERSE STRING");
+
+let reverseHeroName = "VIJAY";
+let reversedHeroOutput = "";
+
+for (let i = reverseHeroName.length - 1; i >= 0; i--) {
+    reversedHeroOutput += reverseHeroName[i];
+}
+
+console.log(reversedHeroOutput);
+
+
+
+
+
+console.log("FIBONACCI SERIES");
+
+let firstNumber = 0;
+let secondNumber = 1;
+
+console.log(firstNumber);
+console.log(secondNumber);
+
+for (let i = 3; i <= 10; i++) {
+    let nextNumber = firstNumber + secondNumber;
+    console.log(nextNumber);
+
+    firstNumber = secondNumber;
+    secondNumber = nextNumber;
+}
+
+
+
+
+
+console.log("VOWELS COUNT");
+
+let vowelHeroName = "SURIYA";
+let vowelCount = 0;
+
+for (let i = 0; i < vowelHeroName.length; i++) {
+    if (
+        vowelHeroName[i] === "A" ||
+        vowelHeroName[i] === "E" ||
+        vowelHeroName[i] === "I" ||
+        vowelHeroName[i] === "O" ||
+        vowelHeroName[i] === "U"
+    ) {
+        vowelCount++;
+    }
+}
+
+console.log("Vowels Count :", vowelCount);
+
+
+
+
+console.log("CHARACTER FREQUENCY COUNT");
+
+let frequencyHeroName = "VIJAY";
+let searchCharacter = "A";
+let characterCount = 0;
+
+for (let i = 0; i < frequencyHeroName.length; i++) {
+    if (frequencyHeroName[i] === searchCharacter) {
+        characterCount++;
+    }
+}
+
+console.log(characterCount);
+
+
+</script>
+</head>
+<body>
+    
+</body>
+</html>

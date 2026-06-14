@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Class Tasks</title>
+    <script>console.log("TASK 1");
+let missingNumbersArray = [1, 2, 3, 5];
+let missingValue = 0;
+
+for (let i = 0; i < missingNumbersArray.length; i++) {
+    if (missingNumbersArray[i + 1] - missingNumbersArray[i] > 1) {
+        missingValue = missingNumbersArray[i] + 1;
+    }
+}
+
+console.log(missingValue);
+
+
+
+
+console.log("TASK 2");
+let nonRepeatedText = "programming";
+
+for (let i = 0; i < nonRepeatedText.length; i++) {
+    let nonRepeatedCount = 0;
+
+    for (let j = 0; j < nonRepeatedText.length; j++) {
+        if (nonRepeatedText[i] === nonRepeatedText[j]) {
+            nonRepeatedCount++;
+        }
+    }
+
+    if (nonRepeatedCount === 1) {
+        console.log(nonRepeatedText[i]);
+        break;
+    }
+}
+
+
+
+
+console.log("TASK 3");
+let repeatedText = "javascript";
+
+for (let i = 0; i < repeatedText.length; i++) {
+    for (let j = i + 1; j < repeatedText.length; j++) {
+        if (repeatedText[i] === repeatedText[j]) {
+            console.log(repeatedText[i]);
+            i = repeatedText.length;
+            break;
+        }
+    }
+}
+
+
+
+console.log("TASK 4");
+let zeroMoveArray = [1, 0, 2, 0, 3, 4, 0];
+let zeroMoveResult = [];
+let zeroIndex = 0;
+
+for (let i = 0; i < zeroMoveArray.length; i++) {
+    if (zeroMoveArray[i] !== 0) {
+        zeroMoveResult[zeroIndex] = zeroMoveArray[i];
+        zeroIndex++;
+    }
+}
+
+for (let i = 0; i < zeroMoveArray.length; i++) {
+    if (zeroMoveArray[i] === 0) {
+        zeroMoveResult[zeroIndex] = 0;
+        zeroIndex++;
+    }
+}
+
+console.log(zeroMoveResult);
+
+
+
+
+console.log("TASK 5");
+let heroCountArray = ["Vijay", "Ajith", "Vijay", "SK"];
+let heroCountObject = {};
+
+for (let i = 0; i < heroCountArray.length; i++) {
+    if (heroCountObject[heroCountArray[i]]) {
+        heroCountObject[heroCountArray[i]]++;
+    } else {
+        heroCountObject[heroCountArray[i]] = 1;
+    }
+}
+
+for (let heroName in heroCountObject) {
+    console.log(heroName + " = " + heroCountObject[heroName]);
+}
+
+
+
+
+console.log("TASK 6");
+let frequentNumberArray = [1, 2, 2, 3, 2, 4, 1];
+
+let frequentCountObject = {};
+let highestCount = 0;
+let mostFrequentNumber;
+
+for (let i = 0; i < frequentNumberArray.length; i++) {
+    if (frequentCountObject[frequentNumberArray[i]]) {
+        frequentCountObject[frequentNumberArray[i]]++;
+    } else {
+        frequentCountObject[frequentNumberArray[i]] = 1;
+    }
+
+    if (frequentCountObject[frequentNumberArray[i]] > highestCount) {
+        highestCount = frequentCountObject[frequentNumberArray[i]];
+        mostFrequentNumber = frequentNumberArray[i];
+    }
+}
+
+console.log(mostFrequentNumber);
+
+
+
+
+console.log("TASK 7");
+let evenOddArray = [1, 2, 3, 4, 5, 6];
+
+let evenNumbersArray = [];
+let oddNumbersArray = [];
+
+let evenIndex = 0;
+let oddIndex = 0;
+
+for (let i = 0; i < evenOddArray.length; i++) {
+    if (evenOddArray[i] % 2 === 0) {
+        evenNumbersArray[evenIndex] = evenOddArray[i];
+        evenIndex++;
+    } else {
+        oddNumbersArray[oddIndex] = evenOddArray[i];
+        oddIndex++;
+    }
+}
+
+console.log("Even :", evenNumbersArray);
+console.log("Odd :", oddNumbersArray);
+
+
+
+
+console.log("TASK 8");
+let leftRotateHeroesArray = ["Vijay", "Ajith", "Suriya", "SK"];
+let leftRotateResult = [];
+
+for (let i = 1; i < leftRotateHeroesArray.length; i++) {
+    leftRotateResult[i - 1] = leftRotateHeroesArray[i];
+}
+
+leftRotateResult[leftRotateHeroesArray.length - 1] = leftRotateHeroesArray[0];
+
+console.log(leftRotateResult);
+
+
+
+
+console.log("TASK 9");
+let rightRotateHeroesArray = ["Vijay", "Ajith", "Suriya", "SK"];
+let rightRotateResult = [];
+
+rightRotateResult[0] = rightRotateHeroesArray[rightRotateHeroesArray.length - 1];
+
+for (let i = 0; i < rightRotateHeroesArray.length - 1; i++) {
+    rightRotateResult[i + 1] = rightRotateHeroesArray[i];
+}
+
+console.log(rightRotateResult);
+
+
+
+
+console.log("TASK 10");
+let secondLongestHeroesArray = ["Vijay", "Ajith", "Sivakarthikeyan", "Dhanush"];
+
+let longestHeroName = "";
+let secondLongestHeroName = "";
+
+for (let i = 0; i < secondLongestHeroesArray.length; i++) {
+    if (secondLongestHeroesArray[i].length > longestHeroName.length) {
+        secondLongestHeroName = longestHeroName;
+        longestHeroName = secondLongestHeroesArray[i];
+    } else if (secondLongestHeroesArray[i].length > secondLongestHeroName.length) {
+        secondLongestHeroName = secondLongestHeroesArray[i];
+    }
+}
+
+console.log(secondLongestHeroName);</script>
+</head>
+<body>
+    
+</body>
+</html>
