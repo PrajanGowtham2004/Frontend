@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Push and Shift</title>
+    <script>
+        let movies = ["GOAT","Leo","Master"];
+movies.push("Ghilli");
+movies.pop();
+console.log(movies);
+
+
+let heros = ["Ajith","Suriya","SK"];
+heros.unshift("Vijay");
+heros.shift();
+console.log(heros);
+
+let fruits = ["Apple","Mango","Orange"];
+fruits.push("Banana", "Grapes");
+fruits.pop();
+fruits.unshift("Pineapple");
+fruits.shift();
+console.log(fruits);
+
+
+
+let studentDetails = {
+   name:"Sudhan",
+   course:"MERN",
+   city:"Chennai"
+};
+console.log(studentDetails.name);
+console.log(studentDetails.course);
+console.log(studentDetails.city);
+console.log(studentDetails["name"]);
+console.log(studentDetails["course"]);
+console.log(studentDetails["city"]);
+
+
+
+
+let mobileStore=[
+   {
+      brand:"Samsung",
+      price:20000
+   },
+
+   {
+      brand:"iPhone",
+      price:80000
+   },
+
+   {
+      brand:"OnePlus",
+      price:35000
+   }
+];
+for(let i=0; i < mobileStore.length; i++){
+    console.log(mobileStore[i].brand,"-",mobileStore[i].price);
+}
+
+
+
+
+let moviesCollection=[
+   {
+      movie:"GOAT",
+      collection:800
+   },
+
+   {
+      movie:"Leo",
+      collection:600
+   },
+
+   {
+      movie:"Master",
+      collection:500
+   }
+];
+
+let totalCollection = 0;
+let highestCollection = moviesCollection[0].collection;
+let highestCollectionName = moviesCollection[0].movie;
+for(let i=0; i < moviesCollection.length ; i++){
+    totalCollection +=  moviesCollection[i].collection;
+    
+    if(highestCollection < moviesCollection[i].collection){
+        highestCollection = moviesCollection[i].collection;
+        highestCollectionName = moviesCollection[i].movie;
+    }
+    
+};
+
+console.log("Total Collection:", totalCollection);
+console.log("Highest Collection:", highestCollection);
+console.log("Highest Collection Name:", highestCollectionName);
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
