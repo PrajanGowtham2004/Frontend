@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Array</title>
+    <script>
+     console.log("TASK 1");
+let course = ["HTML","CSS","JavaScript"];
+course.push("React", "Node.js");
+console.log(course);
+
+
+
+console.log("TASK 2");
+let courses= ["HTML","CSS","JavaScript","React"];
+let removedL = courses.pop();
+console.log("Removed Element:",removedL);
+console.log("Updated Array:", courses);
+
+
+
+console.log("TASK 3");
+let fruit = ["Apple","Mango","Orange","Banana"];
+let removedF = fruit.shift();
+console.log("Removed Element:",removedF);
+console.log("Updated Array:", fruit);
+
+
+
+console.log("TASK 4");
+let hero = ["Ajith","Suriya","SK"];
+hero.unshift("Vijay", "Dhanush");
+console.log("Final Array:",hero);
+
+
+
+
+console.log("TASK 5");
+let coursesSp = ["HTML","CSS","Bootstrap","React"];
+coursesSp.splice(2,1,"JavaScript");
+console.log("Final Array:",coursesSp);
+
+
+
+console.log("TASK 6");
+let courseSl = ["HTML","CSS","JavaScript","React","Node"];
+let sliced = courseSl.slice(2,4);
+console.log("Sliced element:",sliced);
+
+
+console.log("TASK 7");
+let student = {
+
+   name:"Prajan",
+
+   course:"MERN",
+
+   city:"Chennai",
+
+   age:21
+
+};
+for(let students in student){
+    console.log(students," : ",student[students]);
+    
+}
+
+
+
+console.log("TASK 8");
+let movies = [
+   {
+      name:"Vijay",
+      movie:"GOAT"
+   },
+
+   {
+      name:"Ajith",
+      movie:"Vidaamuyarchi"
+   },
+
+   {
+      name:"Suriya",
+      movie:"Kanguva"
+   }
+];
+for(let i=0; i < movies.length; i++){
+    console.log(movies[i].name,"-",movies[i].movie)
+};
+
+
+
+console.log("TASK 9");
+let herosJ = ["Vijay","Ajith","Suriya","SK"];
+let joined = herosJ.join(" | ");
+console.log("After joined:",joined);
+
+
+console.log("TASK 10");
+let coursesIn = ["HTML","CSS","JavaScript","React"];
+let present = coursesIn.includes("React");
+if(present == true){
+    console.log("Course Found")
+}
+else{
+    console.log("Course Not Found")
+}
+
+console.log(present)
+
+
+
+
+   
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
