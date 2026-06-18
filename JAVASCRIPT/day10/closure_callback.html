@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure and Callback</title>
+    <script>
+        console.log("TASK 1");
+let hero = "Vijay";
+let heros = () =>{
+    console.log("Inside function:",hero);
+}
+heros()
+if (true){
+    console.log("Inside IF block:",hero)
+}
+for(let forh = 0; forh< 1 ; forh++){
+    console.log("Inside FOR Loop:",hero)
+}
+
+
+
+console.log("TASK 2");
+const movie = ()=>{
+   let collection = 800;
+}
+// console.log(collection);
+
+
+console.log("TASK 3");
+if(true){
+
+   var actor1 = "Ajith";
+
+   let actor2 = "Vijay";
+
+}
+console.log(actor1)
+// console.log(actor2)
+
+
+
+
+console.log("TASK 4");
+function showMovie(){
+    console.log("GOAT Movie Released")
+}
+showMovie()
+
+
+console.log("TASK 5");
+const add = (a,b)=>{
+    result=a+b;
+    console.log(result)
+}
+add(2,5)
+
+
+
+console.log("TASK 6");
+function processBooking(callback) {
+    callback();
+}
+
+processBooking(() => {
+    console.log("Booking Confirmed");
+    
+});
+
+
+
+
+console.log("TASK 7");
+setTimeout(() => {
+    console.log("Movie Started");
+}, 2000);
+
+
+console.log("TASK 8");
+let processOrder=(callback)=>{
+    console.log("Order Received");
+    callback();
+}
+let deliverOrder=()=>{
+    console.log("Order Delivered");
+}
+processOrder(deliverOrder)
+
+
+
+console.log("TASK 9");
+let counting = () => {
+    let number = 0;
+
+    return () => {
+        
+        console.log(number);
+        number++;
+    };
+};
+
+let store = counting();
+
+store();
+store();
+store();
+store();
+
+
+
+console.log("TASK 10");
+let banking = () => {
+    let balance = 5000;
+
+    return {
+        depositFun: (amount) => {
+            balance += amount;
+        },
+
+        withdrawFun: (amount) => {
+            balance -= amount;
+        },
+
+        balanceFun: () => {
+            console.log("Balance:", balance);
+        }
+    };
+};
+
+let account = banking();
+
+account.depositFun(1000);
+account.withdrawFun(500);
+account.balanceFun();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
