@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 Features</title>
+    <script>console.log("TASK 1");
+let name = "Prajan";
+console.log(name);
+
+name = "Gowtham";
+console.log(name);
+
+
+
+console.log("TASK 2");
+if (true) {
+    let message = "Hello";
+    console.log(message);
+}
+
+// console.log(message);
+
+
+
+console.log("TASK 3");
+const course = "MERN";
+console.log(course);
+
+// course = "Java Full Stack";
+// console.log(course);
+
+
+
+console.log("TASK 4");
+let greet =()=>{
+    console.log("Welcome To JavaScript");
+};
+
+greet();
+
+
+console.log("TASK 5");
+let showHero = (heroName) => {
+    console.log("Hero Name :", heroName);
+};
+
+showHero("Vijay");
+
+
+console.log("TASK 6");
+let add = (a, b) =>{
+    console.log(a + b);
+};
+
+add(10, 20);
+
+
+
+console.log("TASK 7");
+let hero = "Vijay";
+
+console.log(`My Favourite Hero is ${hero}`);
+
+
+console.log("TASK 8");
+let name8 = "Prajan";
+let course8 = "MERN";
+let city8 = "Chennai";
+
+console.log(`My name is ${name8}, I am studying ${course8} and I live in ${city8}.`);
+
+
+
+
+console.log("TASK 9");
+let heroes = ["Vijay", "Ajith", "Suriya"];
+
+let [hero1, hero2] = heroes;
+
+console.log(hero1);
+console.log(hero2);
+
+
+console.log("TASK 10");
+let student10 = {
+    name10: "Prajan",
+    course10: "MERN",
+    city10: "Chennai"
+};
+
+let { name2, course2 } = student10;
+
+console.log(name2);
+console.log(course2);
+
+
+
+console.log("TASK 11");
+let courses = ["HTML", "CSS", "JavaScript"];
+
+let newCourses = [...courses, "React"];
+
+console.log(newCourses);
+
+
+
+console.log("TASK 12");
+let heroes1 = ["Vijay", "Ajith"];
+let heroes2 = ["Suriya", "SK"];
+
+let allHeroes = [...heroes1, ...heroes2];
+
+console.log(allHeroes);
+
+
+
+console.log("TASK 13");
+let student = {
+    name: "Prajan",
+    city: "Chennai"
+};
+
+let updatedStudent = {
+    ...student,
+    course: "MERN"
+};
+
+console.log(updatedStudent);
+
+
+
+console.log("TASK 14");
+let total = (...numbers) =>{
+    console.log(numbers);
+};
+
+total(10, 20, 30, 40);
+
+
+
+console.log("TASK 15");
+let sum = (...numbers) => {
+    let total = 0;
+
+    for (let num of numbers) {
+        total += num;
+    }
+
+    console.log(total);
+};
+
+sum(10, 20, 30, 40, 50);
+</script>
+</head>
+<body>
+    
+</body>
+</html>
