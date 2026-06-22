@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher Order Functions</title>
+    <script>
+        console.log("map() Tasks");
+console.log("TASK 1");
+const heroes = ["Vijay","Ajith","Suriya"];
+const upper = heroes.map(heroes=>{
+    return heroes.toUpperCase()})
+console.log(upper)
+
+
+
+console.log("TASK 2");
+const collections = [100,200,300,400];
+const multi = collections.map((e)=>{
+    return e*10})
+console.log(multi)
+
+
+
+console.log("TASK 3");
+const movies3 = ["GOAT","Leo","Master"];
+const addm=movies3.map((e)=>{
+    return `Movie : ${e}`
+})
+console.log(addm)
+
+
+console.log("filter() Tasks");
+console.log("TASK 4");
+const collections4 = [100,500,800,200,900];
+
+const great = collections4.filter((e)=>{return e>500})
+console.log("Greater than 500:",great);
+
+
+console.log("TASK 5");
+const marks5 = [35,80,20,90,45];
+const pass = marks5.filter((e)=>{
+    return e>=35
+})
+console.log("Passed students:",pass)
+
+
+
+console.log("TASK 6");
+const heroes6 = ["Vijay","Ajith","SK","Suriya"];
+const four = heroes6.filter((e,i)=>{
+    return e.length>4
+})
+console.log(four)
+
+
+
+console.log("find() Tasks");
+console.log("TASK 7");
+const heroes7 = ["Vijay","Ajith","Suriya"];
+const findA = heroes7.find((e)=>{
+    return e == "Ajith"
+})
+console.log(findA)
+
+
+console.log("TASK 8");
+const collections8 = [100,500,800,200];
+const great8=collections8.find(e=> e>400)
+console.log(great8)
+
+
+console.log("TASK 9");
+const heroes9 = ["Vijay","Ajith","Suriya"];
+const indexOfS= heroes9.findIndex(e=>e=="Suriya")
+console.log(indexOfS)
+
+
+
+
+console.log("TASK 10")
+const movies10 = ["GOAT","Leo","Master"];
+const indexOfL= movies10.findIndex(e=>e=="Leo")
+console.log(indexOfL)
+
+
+
+console.log("some() Tasks")
+console.log("TASK 11")
+const marks11 = [35,80,20,90];
+const fail11= marks11.some(e=>e<35)
+console.log(fail11)
+
+
+console.log("TASK 12")
+const collections12 = [100,200,900];
+const cross12 = collections12.some(e=> e>800)
+console.log(cross12)
+
+
+console.log("every() Tasks")
+console.log("TASK 13")
+const marks13 = [50,70,90,40];
+const pass13 = marks13.every(e=> e>=35)
+console.log(pass13)
+
+
+
+console.log("TASK 14")
+const ages14 = [20,25,30,35];
+const above = ages14.every(e=> e>18)
+console.log(above)
+
+
+
+console.log("reduce() Tasks")
+console.log("TASK 15")
+const collections15 = [100,200,300,400];
+const tot15=collections15.reduce((acc,cur)=>{
+    return acc+cur;
+},0);
+console.log(tot15)
+
+
+
+console.log("Array of Objects Tasks")
+console.log("TASK 18")
+const students18 = [
+    {
+      id:1,
+      name:"Sudhan"
+    },
+
+    {
+      id:2,
+      name:"Rahul"
+    }
+];
+const names18= students18.map(e=> e.name)
+console.log(names18)
+
+
+
+
+console.log("TASK 19")
+const students19 = [
+
+   {
+      id:1,
+      age:20
+   },
+
+   {
+      id:2,
+      age:30
+   },
+
+   {
+      id:3,
+      age:18
+   }
+];
+const age19 = students19.filter(e=> e.age>20)
+console.log(age19)
+
+
+
+
+console.log("TASK 20")
+const students20 = [
+
+   {
+      id:1,
+      name:"Sudhan"
+   },
+
+   {
+      id:2,
+      name:"Rahul"
+   }
+];
+const studentId = students20.find(e=> e.id==2)
+console.log(studentId)
+
+
+
+console.log("Intermediate Interview Tasks")
+console.log("TASK 21")
+const highestNum=[100,500,800,200];
+const hiNum = highestNum.reduce((acc,curr)=>{
+    if(curr>acc){
+        return curr
+    }
+    else{
+        return acc
+    }
+},0)
+console.log(hiNum)
+
+
+
+console.log("TASK 22")
+const lowestNum = [100,500,800,200];
+const loNum= lowestNum.reduce((acc,curr)=>{
+    if(curr<acc){
+        return curr
+    }
+    else{
+        return acc
+    }
+})
+console.log(loNum)
+
+
+
+console.log("TASK 23")
+const even23 = [10,15,20,25,30]
+const evnNum= even23.filter(e=> e%2==0)
+console.log(evnNum)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
