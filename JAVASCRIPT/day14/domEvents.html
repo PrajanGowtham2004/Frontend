@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Tasks</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-5">
+
+    <h1 class="text-4xl font-bold text-center mb-8">
+        JavaScript DOM Tasks
+    </h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        <!-- Task 1 -->
+        <div class="bg-white p-5 rounded-xl shadow-lg">
+            <h3 class="text-xl font-bold mb-3">Task 1 - Hero Name</h3>
+            <input id="heroInput" type="text" placeholder="Enter Hero Name"
+                class="border w-full p-2 rounded mb-3">
+            <button onclick="showHero()"
+                class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">
+                Display Hero
+            </button>
+            <h2 id="heroResult" class="mt-3 text-lg font-bold"></h2>
+        </div>
+
+        <!-- Task 2 -->
+        <div class="bg-white p-5 rounded-xl shadow-lg">
+            <h3 class="text-xl font-bold mb-3">Task 2 - Hide Paragraph</h3>
+            <p id="hidePara">This paragraph will be hidden.</p>
+            <button onclick="hideParagraph()"
+                class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded mt-3">
+                Hide
+            </button>
+        </div>
+
+        <!-- Task 3 -->
+        <div class="bg-white p-5 rounded-xl shadow-lg">
+            <h3 class="text-xl font-bold mb-3">Task 3 - Show Paragraph</h3>
+            <p id="showPara" style="display:none;">
+                Hidden paragraph is shown now.
+            </p>
+            <button onclick="showParagraph()"
+                class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-3">
+                Show
+            </button>
+        </div>
+
+        <!-- Task 4 -->
+        <div class="bg-white p-5 rounded-xl shadow-lg">
+            <h3 class="text-xl font-bold mb-3">Task 4 - Toggle Paragraph</h3>
+            <p id="togglePara">Toggle Me</p>
+            <button onclick="toggleParagraph()"
+                class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded mt-3">
+                Toggle
+            </button>
+        </div>
+
+        <!-- Task 5 -->
+        <div class="bg-white p-5 rounded-xl shadow-lg">
+            <h3 class="text-xl font-bold mb-3">Task 5 - Username Check</h3>
+            <input id="username" type="text" placeholder="Enter Username"
+                class="border w-full p-2 rounded mb-3">
+            <button onclick="checkUser()"
+                class="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded">
+                Login
+            </button>
+            <h2 id="userResult" class="mt-3 font-bold"></h2>
+        </div>
+
+        <!-- Task 6 -->
+        <div class="bg-white p-5 rounded-xl shadow-lg">
+            <h3 class="text-xl font-bold mb-3">Task 6 - Password Strength</h3>
+            <input id="password" type="password" placeholder="Enter Password"
+                class="border w-full p-2 rounded mb-3">
+            <button onclick="checkPassword()"
+                class="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded">
+                Check
+            </button>
+            <h2 id="passwordResult" class="mt-3 font-bold"></h2>
+        </div>
+
+        <!-- Task 7 -->
+        <div class="bg-white p-5 rounded-xl shadow-lg">
+            <h3 class="text-xl font-bold mb-3">Task 7 - Full Name</h3>
+            <input id="fname" type="text" placeholder="First Name"
+                class="border w-full p-2 rounded mb-2">
+            <input id="lname" type="text" placeholder="Last Name"
+                class="border w-full p-2 rounded mb-3">
+            <button onclick="showFullName()"
+                class="bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 rounded">
+                Display Name
+            </button>
+            <h2 id="fullName" class="mt-3 font-bold"></h2>
+        </div>
+
+        <!-- Task 8 -->
+        <div class="bg-white p-5 rounded-xl shadow-lg">
+            <h3 class="text-xl font-bold mb-3">Task 8 - Change Image</h3>
+            <img id="myImage"
+                src="../assets/images/domIntro/domIntro1.jpeg"
+                class="rounded-lg mb-3">
+            <button onclick="changeImage()"
+                class="bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded">
+                Change Image
+            </button>
+        </div>
+
+        <!-- Task 9 -->
+        <div class="bg-white p-5 rounded-xl shadow-lg">
+            <h3 class="text-xl font-bold mb-3">Task 9 - Change Heading</h3>
+            <h2 id="heading" class="text-2xl font-bold">
+                Welcome
+            </h2>
+            <button onclick="changeHeading()"
+                class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded mt-3">
+                Change
+            </button>
+        </div>
+
+        <!-- Task 10 -->
+        <div class="bg-white p-5 rounded-xl shadow-lg">
+            <h3 class="text-xl font-bold mb-3">Task 10 - Form Validation</h3>
+            <input id="formInput" type="text" placeholder="Enter Value"
+                class="border w-full p-2 rounded mb-3">
+            <button onclick="submitForm()"
+                class="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded">
+                Submit
+            </button>
+            <h2 id="formResult" class="mt-3 font-bold"></h2>
+        </div>
+
+        <!-- Task 11 -->
+        <div class="bg-white p-5 rounded-xl shadow-lg">
+            <h3 class="text-xl font-bold mb-3">Task 11 - Counter</h3>
+            <button onclick="increaseCounter()"
+                class="bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2 rounded">
+                Click Me
+            </button>
+            <h2 id="counter" class="mt-3 text-2xl font-bold">
+                0
+            </h2>
+        </div>
+
+    </div>
+
+    <script>
+
+        function showHero(){
+            let hero = document.getElementById("heroInput").value;
+            document.getElementById("heroResult").innerText = hero;
+        }
+
+        function hideParagraph(){
+            document.getElementById("hidePara").style.display = "none";
+        }
+
+        function showParagraph(){
+            document.getElementById("showPara").style.display = "block";
+        }
+
+        function toggleParagraph(){
+            let para = document.getElementById("togglePara");
+
+            if(para.style.display == "none"){
+                para.style.display = "block";
+            }
+            else{
+                para.style.display = "none";
+            }
+        }
+
+        function checkUser(){
+            let user = document.getElementById("username").value;
+
+            if(user == "admin"){
+                document.getElementById("userResult").innerText = "Login Success";
+            }
+            else{
+                document.getElementById("userResult").innerText = "Invalid User";
+            }
+        }
+
+        function checkPassword(){
+            let pass = document.getElementById("password").value;
+
+            if(pass.length >= 8){
+                document.getElementById("passwordResult").innerText = "Strong Password";
+            }
+            else{
+                document.getElementById("passwordResult").innerText = "Weak Password";
+            }
+        }
+
+        function showFullName(){
+            let first = document.getElementById("fname").value;
+            let last = document.getElementById("lname").value;
+
+            document.getElementById("fullName").innerText =
+            first + " " + last;
+        }
+
+        function changeImage(){
+            document.getElementById("myImage").src =
+            "../assets/images/domIntro/domIntro2.jpeg";
+        }
+
+        function changeHeading(){
+            let heading = document.getElementById("heading");
+
+            heading.innerText = "JavaScript DOM";
+            heading.style.color = "red";
+        }
+
+        function submitForm(){
+            let value = document.getElementById("formInput").value;
+
+            if(value == ""){
+                document.getElementById("formResult").innerText =
+                "Please Enter Value";
+            }
+            else{
+                document.getElementById("formResult").innerText =
+                "Form Submitted";
+            }
+        }
+
+        let count = 0;
+
+        function increaseCounter(){
+            count++;
+            document.getElementById("counter").innerText = count;
+        }
+
+    </script>
+
+</body>
+</html>
