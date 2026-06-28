@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register Form</title>
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+
+    <input type="text" id="name" placeholder="Enter Name"><br><br>
+    <input type="email" id="email" placeholder="Enter Email"><br><br>
+    <button onclick="register()">Register</button>
+
+    <script>
+        let users = [];
+
+        function register() {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+
+            let user = {
+                name: name,
+                email: email
+            };
+
+            users.push(user);
+
+            console.log(users);
+
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+        }
+    </script>
+
+</body>
+</html>

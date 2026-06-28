@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript DOM Tasks</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            padding:20px;
+        }
+        .box{
+            border:1px solid #ccc;
+            padding:15px;
+            margin-bottom:15px;
+            border-radius:8px;
+        }
+        .card{
+            border:1px solid #000;
+            padding:10px;
+            margin-top:10px;
+        }
+        .dark{
+            background:black;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+
+<h1>JavaScript DOM Tasks</h1>
+
+<!-- Task 1 -->
+<div class="box">
+<h3>Task 1 - Character Counter</h3>
+<textarea id="txt" oninput="countChar()"></textarea>
+<p id="charResult">Total Characters : 0</p>
+</div>
+
+<!-- Task 2 -->
+<div class="box">
+<h3>Task 2 - Age Category Checker</h3>
+<input type="number" id="age">
+<button onclick="checkAge()">Check</button>
+<p id="ageResult"></p>
+</div>
+
+<!-- Task 3 -->
+<div class="box">
+<h3>Task 3 - Dark Mode</h3>
+<button onclick="toggleMode()">Toggle Theme</button>
+</div>
+
+<!-- Task 4 -->
+<div class="box">
+<h3>Task 4 - Movie Ticket Calculator</h3>
+<input type="number" id="tickets">
+<button onclick="calculateTicket()">Calculate</button>
+<p id="ticketResult"></p>
+</div>
+
+<!-- Task 5 -->
+<div class="box">
+<h3>Task 5 - Profile Card Generator</h3>
+<input type="text" id="pname" placeholder="Name"><br><br>
+<input type="text" id="role" placeholder="Role"><br><br>
+<input type="text" id="company" placeholder="Company"><br><br>
+<button onclick="generateCard()">Generate</button>
+<div id="profileCard"></div>
+</div>
+
+<!-- Task 6 -->
+<div class="box">
+<h3>Task 6 - Search Hero</h3>
+<input type="text" id="hero">
+<button onclick="searchHero()">Search</button>
+<p id="heroResult"></p>
+</div>
+
+<!-- Task 7 -->
+<div class="box">
+<h3>Task 7 - Lucky Number Checker</h3>
+<input type="number" id="luckyNum">
+<button onclick="checkLucky()">Check</button>
+<p id="luckyResult"></p>
+</div>
+
+<!-- Task 8 -->
+<div class="box">
+<h3>Task 8 - Product Price Calculator</h3>
+<input type="text" id="product" placeholder="Product"><br><br>
+<input type="number" id="qty" placeholder="Quantity"><br><br>
+<input type="number" id="price" placeholder="Price"><br><br>
+<button onclick="calculateProduct()">Calculate</button>
+<p id="productResult"></p>
+</div>
+
+<!-- Task 9 -->
+<div class="box">
+<h3>Task 9 - Random Quote Generator</h3>
+<button onclick="randomQuote()">Generate Quote</button>
+<p id="quoteResult"></p>
+</div>
+
+<!-- Task 10 -->
+<div class="box">
+<h3>Task 10 - Student ID Generator</h3>
+<input type="text" id="sname" placeholder="Name"><br><br>
+<input type="text" id="course" placeholder="Course"><br><br>
+<button onclick="generateStudent()">Generate</button>
+<div id="studentCard"></div>
+</div>
+
+<!-- Bonus ATM -->
+<div class="box">
+<h3>Bonus - Mini ATM</h3>
+<input type="number" id="amount" placeholder="Amount">
+<button onclick="deposit()">Deposit</button>
+<button onclick="withdraw()">Withdraw</button>
+<button onclick="checkBalance()">Check Balance</button>
+<p id="balanceResult"></p>
+</div>
+
+<script>
+
+// Task 1
+function countChar(){
+    let text = document.getElementById("txt").value;
+    document.getElementById("charResult").innerHTML =
+    "Total Characters : " + text.length;
+}
+
+// Task 2
+function checkAge(){
+    let age = Number(document.getElementById("age").value);
+
+    if(age <= 12)
+        ageResult.innerHTML = "Child";
+    else if(age <= 19)
+        ageResult.innerHTML = "Teenager";
+    else if(age <= 59)
+        ageResult.innerHTML = "Adult";
+    else
+        ageResult.innerHTML = "Senior Citizen";
+}
+
+// Task 3
+function toggleMode(){
+    document.body.classList.toggle("dark");
+}
+
+// Task 4
+function calculateTicket(){
+    let tickets = Number(document.getElementById("tickets").value);
+    let total = tickets * 150;
+
+    ticketResult.innerHTML =
+    "Total Amount : ₹" + total;
+}
+
+// Task 5
+function generateCard(){
+    let name = pname.value;
+    let roleValue = role.value;
+    let companyValue = company.value;
+
+    profileCard.innerHTML = `
+    <div class="card">
+        <h3>${name}</h3>
+        <p>${roleValue}</p>
+        <p>${companyValue}</p>
+    </div>`;
+}
+
+// Task 6
+let heroes = ["Vijay","Ajith","Suriya","SK","Dhanush"];
+
+function searchHero(){
+    let hero = document.getElementById("hero").value;
+
+    heroResult.innerHTML =
+    heroes.includes(hero) ? "Found" : "Not Found";
+}
+
+// Task 7
+function checkLucky(){
+    let num = Number(document.getElementById("luckyNum").value);
+
+    let lucky = [7,14,21,28];
+
+    luckyResult.innerHTML =
+    lucky.includes(num)
+    ? "Lucky Number"
+    : "Normal Number";
+}
+
+// Task 8
+function calculateProduct(){
+    let product = document.getElementById("product").value;
+    let qty = Number(document.getElementById("qty").value);
+    let price = Number(document.getElementById("price").value);
+
+    let total = qty * price;
+
+    productResult.innerHTML = `
+    Product : ${product}<br>
+    Quantity : ${qty}<br>
+    Total : ₹${total}`;
+}
+
+// Task 9
+let quotes = [
+"Believe in yourself",
+"Never give up",
+"Success needs effort",
+"Stay positive",
+"Keep learning"
+];
+
+function randomQuote(){
+    let index =
+    Math.floor(Math.random() * quotes.length);
+
+    quoteResult.innerHTML = quotes[index];
+}
+
+// Task 10
+let count = 1001;
+
+function generateStudent(){
+
+    let name = sname.value;
+    let courseName = course.value;
+
+    let id = "STU" + count++;
+
+    studentCard.innerHTML = `
+    <div class="card">
+        <h3>${name}</h3>
+        <p>${courseName}</p>
+        <p>ID : ${id}</p>
+    </div>`;
+}
+
+// Bonus ATM
+let balance = 1000;
+
+function deposit(){
+    let amount =
+    Number(document.getElementById("amount").value);
+
+    balance += amount;
+
+    balanceResult.innerHTML =
+    "Balance : ₹" + balance;
+}
+
+function withdraw(){
+    let amount =
+    Number(document.getElementById("amount").value);
+
+    balance -= amount;
+
+    balanceResult.innerHTML =
+    "Balance : ₹" + balance;
+}
+
+function checkBalance(){
+    balanceResult.innerHTML =
+    "Balance : ₹" + balance;
+}
+
+</script>
+
+</body>
+</html>
+
