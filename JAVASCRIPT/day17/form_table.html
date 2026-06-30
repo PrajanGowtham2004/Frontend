@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-5">
+
+    <div class="max-w-3xl mx-auto bg-white p-5 rounded shadow">
+
+        <h1 class="text-3xl font-bold text-center mb-5">
+            Student Registration
+        </h1>
+
+        
+        <form id="studentForm" class="space-y-3">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter Name"
+                class="w-full border p-2 rounded"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter Email"
+                class="w-full border p-2 rounded"
+                required
+            >
+
+            <button
+            type="button"
+            onclick="saveData()"
+            class="bg-blue-500 text-white px-4 py-2 rounded"
+            >
+            Save
+            </button>
+
+        </form>
+
+        
+        <table class="w-full mt-5 border border-collapse">
+            <thead class="bg-gray-200">
+                <tr>
+                    <th class="border p-2">S.No</th>
+                    <th class="border p-2">Name</th>
+                    <th class="border p-2">Email</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+
+    </div>
+
+    <script>
+
+let students = [];
+
+function saveData() {
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+
+    let student = {
+        name: name,
+        email: email
+    };
+
+    students.push(student);
+
+    localStorage.setItem("students", JSON.stringify(students));
+
+    showData();
+}
+
+function showData() {
+
+    let data = JSON.parse(localStorage.getItem("students")) || [];
+
+    let row = "";
+
+    data.forEach(function(student, index) {
+
+        row += `
+        <tr>
+            <td class="border p-2">${index + 1}</td>
+            <td class="border p-2">${student.name}</td>
+            <td class="border p-2">${student.email}</td>
+        </tr>
+        `;
+
+    });
+
+    document.getElementById("tableBody").innerHTML = row;
+}
+
+showData();
+
+</script>
+
+</body>
+</html>
